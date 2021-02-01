@@ -10,16 +10,17 @@ div.wrapper {
 }
 
 div.nav-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: right;
-	justify-content: right;
-	padding-left: 78%;
+	float: right;
+	height: 100%;
+	width: 50%;
 }
 
 nav.links {
-	display: block;
-
+	
+	float: right;
+	padding-left: 50%;
+	padding-right: 8%;
+		
 	a:link, a:visited {
 		color: white;
 		text-decoration: none;
@@ -43,17 +44,15 @@ nav.links {
 
 div.side-div {
 	a.avatar {
-		display: block;
+		clear: both;
+		padding-left: 50%;
+		padding-right: 8%;
+		float: right;
 	}
 
 	background: black;
 	color: white;
 	width: 30%;
-}
-
-div.nav-wrapper {
-	height: 100%;
-	width: 100%;
 }
 
 div.side-div img {
