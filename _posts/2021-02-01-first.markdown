@@ -1,0 +1,17 @@
+---
+layout: front
+title: First
+date: 2021-02-01 19:16:25 +0000
+cover: "/assets/img/example.jpeg"
+---
+
+# First post?
+### Is it?
+
+{% highlight c %}
+for(;;) 
+	fprintf(stdout, "%s", "Useless garbage\n");
+
+{% endhighlight %}
+
+... I guess so.

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# About:
+# About
 
-This is the about section of the page.
+_email:_ [root@gerlofs.me](mailto:root@gerlofs.me)
  
