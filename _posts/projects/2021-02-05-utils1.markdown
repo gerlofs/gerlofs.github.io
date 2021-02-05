@@ -1,0 +1,18 @@
+---
+layout: front
+title: "Rewriting unix utilities: Grep"
+cover: "/assets/img/cowsay.png"
+tags: project unix
+---
+
+# Rewriting unix utilities for fun and zero profit
+---
+<h2 align="center">grep</h2>
+
+*In progress...*
+
+*Sources:*
+
+1. [Mastering Regular Expressions](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) by Jeffrey Friedl.
+
+2. Rob Pike's section on _Regex_ from [Beautiful Code](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html). 
