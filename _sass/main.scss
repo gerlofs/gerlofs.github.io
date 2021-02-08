@@ -11,6 +11,7 @@ div.wrapper {
 
 div.nav-wrapper {
 	float: right;
+	padding-top: 25px;
 	height: 100%;
 	width: 50%;
 }
@@ -46,7 +47,7 @@ div.side-div {
 	a.avatar {
 		clear: both;
 		padding-left: 50%;
-		padding-right: 30%;
+		padding-right: 24%;
 		float: right;
 	}
 
@@ -56,8 +57,8 @@ div.side-div {
 }
 
 div.side-div img {
-	height: 100px;
-	width: 100px;
+	height: 120px;
+	width: 120px;
 	border-radius: 50%;
 }
 
