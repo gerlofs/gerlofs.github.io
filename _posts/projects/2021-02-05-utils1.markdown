@@ -2,7 +2,8 @@
 layout: front
 title: "Rewriting unix utilities: Grep"
 cover: "/assets/img/cowsay.png"
-tags: project unix
+tags: unlisted
+
 ---
 
 # Rewriting unix utilities for fun and zero profit
@@ -12,21 +13,33 @@ tags: project unix
 `Grep` is a pattern matching engine that routes matched lines of text to the standard output. Simply put:
 
 > `grep` prints lines that contain a match for one or more _patterns_* [1]
-\* Emphasis is mine.
 
-The _grep_ command **...**
+*\* Emphasis is mine.*
 
-_Patterns_ can be literal strings, e.g. `grep "article" article.md` will match the literal string `article` against each line and route that line to stdout if it contains an exact match, or regular expressions.
-Regular expressions (*regex* for short) are a type of meta-programming-language consisting of literal strings and special characters that can be used to tell the parsing engine the content **and** conditions to match against.
-For example, `grep "l" article.md` will match any line containing the character `l`, however, if we wanted to only match lines containing `l` at the beginning of the line, we could use regex to fufill this: `grep "^l" article.md`.
+The _grep_ command reads line from a file into a buffer until it reaches a new-line [2], searching each line for the input pattern and printing those lines back to the user. There is **a lot** more to grep than this due to the several quadrillion options available (see [1] and [3]), but this is the basics of Unix's fifteenth most important command [4].
+
+
+
+_Patterns_ can be literal strings, e.g. `grep "article" article.md` will match the literal string `article` against each line and route that line to stdout if it contains an exact match [5], or regular expressions.
+Regular expressions (*regex* for short) are a type of meta-programming-language consisting of literal strings and special characters that can be used to tell the parsing engine the byte content **and** conditions to match against.
+For example, `grep "l" article.md` will match any line containing the character `l`, however, if we wanted to only match lines containing `l` at the beginning of the line, we could use a regular expression to fulfil this: `grep "^l" article.md`.
+
 
 
 *In progress...*
 
-*Sources:*
+*Appendix:*
 
-1. [Grep Manual](https://www.gnu.org/software/grep/manual/grep.html)
+1. [Grep Manual](https://www.gnu.org/software/grep/manual/grep.html).
 
-2. [Mastering Regular Expressions](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) by Jeffrey Friedl.
+2. The grep command requires the end-of-file character be a new-line, it supplements if one is missing. The fact that `\n` is a required character for operation means that you *technically* cannot use it as an input pattern (see: 1, above). It [is possible](https://stackoverflow.com/questions/12652568/how-to-give-a-pattern-for-new-line-in-grep), however, to use `\n` in some scenarios thanks to the `-z` option.
+
+3. [A decent summary of a few of the more useful options](https://www-users.york.ac.uk/~mijp1/teaching/2nd_year_Comp_Lab/guides/grep_awk_sed.pdf).
+
+4. [Says this guy](https://www.oliverelliott.org/article/computing/ref_unix/).
+
+5. This includes matches within words. Sticking with the example, a line containing the world `articles` will match as well as a line with `subarticles`.
+
+3. [Mastering Regular Expressions](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) by Jeffrey Friedl.
 
 3. Rob Pike's section on _Regex_ from [Beautiful Code](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html). 

@@ -16,7 +16,7 @@
 		<div class="centre-div">
 			<div class="posts-container">
 				{% for post in site.posts limit:5 %}	
-					{% if post.tags[0] != "project" %}
+					{% if post.tags[0] != "project" and post.tags[0] != "unlisted" %}
 					<div class="posts-item" style="background-image:url({{ post.cover | asset_url}}); 
 					    background-position: center;">
 					<span class="post-meta">{{ post.date | date: "%b %-d, %Y"}}</span>
