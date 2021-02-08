@@ -9,10 +9,24 @@ tags: project unix
 ---
 <h2 align="center">grep</h2>
 
+`Grep` is a pattern matching engine that routes matched lines of text to the standard output. Simply put:
+
+> `grep` prints lines that contain a match for one or more _patterns_* [1]
+\* Emphasis is mine.
+
+The _grep_ command **...**
+
+_Patterns_ can be literal strings, e.g. `grep "article" article.md` will match the literal string `article` against each line and route that line to stdout if it contains an exact match, or regular expressions.
+Regular expressions (*regex* for short) are a type of meta-programming-language consisting of literal strings and special characters that can be used to tell the parsing engine the content **and** conditions to match against.
+For example, `grep "l" article.md` will match any line containing the character `l`, however, if we wanted to only match lines containing `l` at the beginning of the line, we could use regex to fufill this: `grep "^l" article.md`.
+
+
 *In progress...*
 
 *Sources:*
 
-1. [Mastering Regular Expressions](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) by Jeffrey Friedl.
+1. [Grep Manual](https://www.gnu.org/software/grep/manual/grep.html)
 
-2. Rob Pike's section on _Regex_ from [Beautiful Code](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html). 
+2. [Mastering Regular Expressions](https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/) by Jeffrey Friedl.
+
+3. Rob Pike's section on _Regex_ from [Beautiful Code](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html). 
