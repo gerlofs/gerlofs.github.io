@@ -12,6 +12,8 @@ tags: unlisted
 
 ### What is the point in rewriting simplified versions of existing tools?
 
+The goal of this rewrite project is to produce a tool that is robust and *at least* faster than matching using `strstr()`, with an end goal to produce results on par with regular expression pattern matching functionality available in interpreted languages such as Perl or Python.
+
 ### What is grep?
 
 `Grep` is a pattern matching engine that routes matched lines of text to the standard output. Simply put:
@@ -57,9 +59,34 @@ features in the form of an expansion of supported metacharacters and command lin
 When I mentioned earlier in this article that regular expressions were originally designed as a notation for finite automata, you may have mistakenly thought that a restrictive, mathematical process was
 originally developed and morphed into a more sophisticated and, more importantly, more efficient system. If you assumed this, sadly, you're incorrect. Pattern matching techniques in modern systems _can_ be 
 considerably slower in edge cases than the original grep (and preceeding tools created by Thompson) designed and implemented more than 40 years ago [Z]. That's because the attention to the founding concept behind 
-regular expressions was lost in translation somewhere along the line.
+regular expressions was lost in translation somewhere along the line. The idea of finite automata (state machines) provides a way of thinking about regular expression pattern matching in both a deterministic
+(DFA, deterministic finite automata) and non-deterministic (NFA, non-deterministic finitie automata) way.
 
-Implementing NFA into pattern matching tools such as grep is one of the reasons *grep* and associated tools are much longer in code length than Pike's simplified tool. 
+NFAs and DFAs can be understood visually using a state graph, where circles represent a state, vertices are connected via edges which denote state transitions, and the final state is denoted by a double-walled circle.
+The below example (A) shows a NFA for the regular expression `a` - basically, is there an a? If so, we go to the last state, otherwise there's no match and the check fails. Deterministic state machines are fundamentally easy
+to understand once the diagramatic language is known, for a pattern of *n* length there may be *n*+1 states including the ultimate state. Simply, each item in the regular expression pattern forces through one state to the next 
+in the case of a successful match, or produces a failure in the case where there can be no transition from one state to another or there are no more transitions (characters or metacharacters left in the pattern) and we 
+are not at the final state. This is codified in Pike's regex engine, where each conditional check within the recursive functions denotes an edge between each state.
+
+(A) ![basic machine for regex 'a'](/assets/img/project/grep/basic_machine)
+
+In the case of regular exceptions displayed as deterministic state machines, each of the edges is a check against a character in the pattern. Metacharacters do not have their own edge in the same way, rather metacharacters alter the flow of the state
+machine, as in the below case (B) where the `+` metacharacter performs an additional check for *b* after a sequence of two successive *b* characters, this route puts the state machine back to S<sub>1</sub> where 
+a second *b* character is required for a successful check (eliminating strings with an odd number of *b* characters: e.g. *abbba* and *aba*). In a similar way, the `*` metacharacter provides an optional edge
+which will force a move to a different state. In the example below (C) for the pattern `(a+b)*`, an edge allows a state change from the final state, where we have a match, to a state where we now need a *b* character
+to reach the final state again.
+
+(B) ![Russ Cox's example DFA](/assets/img/project/grep/cox_machine_steps)
+
+(C) ![An example of how the asterisk character can add an optional edge/step](/assets/img/project/grep/asterisk_machine)
+
+
+
+Implementing NFA into pattern matching tools such as grep is one of the reasons *grep* and associated tools are much longer in code length than Pike's simplified tool - other reasons account for this too, such as 
+a greater offering of metacharacters and functionality that does not conform to Thompson's construction (?). 
+
+
+
 
 [Z Source](https://swtch.com/~rsc/regexp/regexp1.html)
 
