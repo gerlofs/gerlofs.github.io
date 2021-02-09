@@ -10,6 +10,10 @@ tags: unlisted
 ---
 <h2 align="center">grep</h2>
 
+### What is the point in rewriting simplified versions of existing tools?
+
+### What is grep?
+
 `Grep` is a pattern matching engine that routes matched lines of text to the standard output. Simply put:
 
 > `grep` prints lines that contain a match for one or more _patterns_* [1]
@@ -18,13 +22,46 @@ tags: unlisted
 
 The _grep_ command reads line from a file into a buffer until it reaches a new-line [2], searching each line for the input pattern and printing those lines back to the user. There is **a lot** more to grep than this due to the several quadrillion options available (see [1] and [3]), but this is the basics of Unix's fifteenth most important command [4].
 
-
+### What are patterns and regular expressions?
 
 _Patterns_ can be literal strings, e.g. `grep "article" article.md` will match the literal string `article` against each line and route that line to stdout if it contains an exact match [5], or regular expressions.
 Regular expressions (*regex* for short) are a type of meta-programming-language consisting of literal strings and special characters that can be used to tell the parsing engine the byte content **and** conditions to match against.
 For example, `grep "l" article.md` will match any line containing the character `l`, however, if we wanted to only match lines containing `l` at the beginning of the line, we could use a regular expression to fulfil this: `grep "^l" article.md`.
 
+### Why grep?
 
+Grep is described by Kernighan as "*the classic example of tool-based programming*" in *The Practice of Programming*\[X]. In the same book, an elegant solution of pattern-matching, with a more minimal subset of metacharacters than that used in grep, is presented (code by Rob Pike [X]). 
+Kernighan later (in *Beautiful Code* [Y]) went on to applaud Pike's code and detailed why it was smaller and more pedagogical than the *grep* tool and its many variants. I think these points also echo why a recreation of *grep* serves as a valuable project in which to learn recursion, pointer arthimetic, and, arguably, the discipline of *clean code*:
+
+> First, the features are well chosen to be the most useful and to give the most insight into implementation, without any frills. For example, the implementation of the anchored patterns ^ and $ requires only three or four lines, but it shows how to deal with special cases cleanly before handling the general cases uniformly. The closure operation * must be present because it is a fundamental notion in regular expressions and provides the only way to handle patterns of unspecified lengths. But it would add no insight to also provide + and ?, so those are left as exercises.
+> Second, recursion is a win. This fundamental programming technique almost always leads to smaller, cleaner, and more elegant code than the equivalent written with explicit loops, and that is the case here. The idea of peeling off one matching character from the front of the regular expression and from the text, then recursing for the rest, echoes the recursive structure of the traditional factorial or string length examples, but in a much more interesting and useful setting.
+> Third, this code really uses the underlying language to good effect. Pointers can be misused, of course, but here they are used to create compact expressions that naturally express the extracting of individual characters and advancing to the next character. Array indexing or substrings can achieve the same effect, but in this code, pointers do a better job, especially when coupled with C idioms for autoincrement and implicit conversion of truth values.
+
+Additionally, a *grep*-like tool has the potential to teach the programmer a lot about testing. As Kernighan points out: 
+
+> Regular expressions are rich enough that testing is far from trivial, but small enough that one can quickly write down a substantial collection of tests to be performed mechanically [Y]
+
+That's a good few areas to dive in to despite the succinctness of Pike's original code - the _engine_ encompasses only 35 lines. The brevity of which allows for many improvements and additional 
+features in the form of an expansion of supported metacharacters and command line options, many of which are even noted in the *Building on It* section of Kernighan's revist [Y].
+
+### The uninteresting bit.
+
+( Parse from standard input or a list of files )
+
+### The regular expression engine.
+
+### Testing
+
+### Nondeterministic finite automata to solve pathological expressions
+
+When I mentioned earlier in this article that regular expressions were originally designed as a notation for finite automata, you may have mistakenly thought that a restrictive, mathematical process was
+originally developed and morphed into a more sophisticated and, more importantly, more efficient system. If you assumed this, sadly, you're incorrect. Pattern matching techniques in modern systems _can_ be 
+considerably slower in edge cases than the original grep (and preceeding tools created by Thompson) designed and implemented more than 40 years ago [Z]. That's because the attention to the founding concept behind 
+regular expressions was lost in translation somewhere along the line.
+
+Implementing NFA into pattern matching tools such as grep is one of the reasons *grep* and associated tools are much longer in code length than Pike's simplified tool. 
+
+[Z Source](https://swtch.com/~rsc/regexp/regexp1.html)
 
 *In progress...*
 
