@@ -30,6 +30,8 @@ div.centre-div h3 { font-size: 20px; color: #898989; }
 
 div.centre-div p { font: 16px "Helvetica Neue", Helvetica, sans-serif; }
 
+div.centre-div li { font: 14px "Helvetica Neue", Helvetica, sans-serif; }
+
 div.posts-container { display: flex; flex-wrap: wrap; flex-direction: row; align-content: center; }
 
 div.posts-container div.posts-item { padding: 10px; padding-top: 40px; height: 100px; width: 100%; flex: 0 0 60%; margin-bottom: 40px; }
