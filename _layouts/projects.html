@@ -19,11 +19,10 @@
 				{% for tag in site.tags %}
 					{% if tag[0] == "project" %}
 						{% for post in tag[1] limit:5 %}	
-							<div class="posts-item" style="background-image:url({{ post.cover | asset_url}}); 
-					    		background-position: center;">
-							<span class="post-meta">{{ post.date | date: "%b %-d, %Y"}}</span>
-							</br></br>
-							<a href="{{ post.url }}">{{ post.title }}</a>
+							<div class="posts-item">
+							<a href="{{ post.url }}"><img class="posts-img" src="{{post.cover | asset_url}}"></img>
+								<img class="posts-gif" src="{{post.cover-active | asset_url}}"></img></a>
+							<a href="{{ post.url }}" class="posts-text">{{ post.title }}</a>
 							</div>
 						{% endfor %}
 					{% endif %}

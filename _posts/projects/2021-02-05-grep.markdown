@@ -1,7 +1,9 @@
 ---
 layout: front
 title: "Greplike"
-cover: "/assets/img/cowsay.png"
+header: "/assets/img/project/grep/grepping.png"
+cover: "/assets/img/project/grep/grep.png"
+cover-active: "/assets/img/project/grep/grep.gif"
 tags: project 
 
 ---
