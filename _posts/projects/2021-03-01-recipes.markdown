@@ -1,0 +1,21 @@
+---
+layout: front
+title: "Smolrecipes"
+header: "/assets/img/project/grep/grepping.png"
+cover: "/assets/img/project/grep/grep.png"
+cover-active: "/assets/img/project/grep/grep.gif"
+tags: unlisted
+
+---
+
+
+<h3>In Progress... </h3>
+---
+
+<h2 align="center">A minimal, no-bloat recipes directory site</h2>
+<h3>Weapon of choice:</h3>
+<p>HTML/CSS</p>
+<h3>Adapted from:</h3>
+Luke Smith's <a href="https://www.youtube.com/watch?v=cvDyQUpaFf4">A demonstration on Modern Web Bloat</a>
+<h3>Summary:</h3>
+
