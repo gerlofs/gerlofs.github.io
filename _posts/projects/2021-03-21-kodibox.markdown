@@ -1,0 +1,41 @@
+---
+layout: front
+title: "Kodibox"
+header: "/assets/img/project/grep/grepping.png"
+cover: "/assets/img/project/grep/grep.png"
+cover-active: "/assets/img/project/grep/grep.gif"
+tags: unlisted
+
+---
+<h3>In Progress... </h3>
+---
+
+<h2 align="center">A sub £200 streaming solution</h2>
+<h3>Weapon of choice:</h3>
+<p><a href="https://kodi.tv/">Kodi</a></p>
+<h3>Adapted from:</h3>
+Media Experience's <a href="https://mediaexperience.com/raspberry-pi-xbmc-with-raspbmc/">Guide</a> to LibreELEC & Kodi on RBP4.
+<h3>Summary:</h3>
+
+Like many UK-based taxpayers, I don't like or need the TV license. For years I have been connecting my old Macbook to the television and using the 
+contemporary streaming solutions - Netflix and the like. I decided to replace this solution with something a little smaller and more energy efficient: 
+A Raspberry Pi (RBP from now on) running the popular open-source *Kodi* software and LibreELEC operating system. This isn't *much* of a project but I 
+thought it would be useful to share a more condensed guide than the one linked above with some extra pieces of information I gained along the way...
+
+Here's how to build a small media server for less than £200*:
+
+<h3> Parts List: </h3>
+1. A Raspberry Pi 3/4.
+2. A RBP power-supply (~5V, 3A).
+3. An on/off USB-C switch (optional).
+4. A RBP case (optional).
+5. An external HDD or SSD (optional).
+
+<h3> How do? </h3>
+1. 
+2. If you're opting to use Kodi for media files (e.g. DVD rips), an external hard drive can be loaded up and connected to the RBP Kodi box. Ensure the 
+drive is formatted to NTFS or ext4 or it won't be usable with the RBP.
+3. 
+
+<h3> Appendix: </h3>
+\* This is a guide price that assumes an external drive is being used. I opted for a 5TB HDD which pushed the cost of this project up to ~£165. 

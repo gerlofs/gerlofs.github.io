@@ -4,7 +4,7 @@ title: "Greplike"
 header: "/assets/img/project/grep/grepping.png"
 cover: "/assets/img/project/grep/grep.png"
 cover-active: "/assets/img/project/grep/grep.gif"
-tags: project 
+tags: unlisted 
 
 ---
 
