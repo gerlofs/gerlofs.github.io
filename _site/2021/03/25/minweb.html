@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Minweb</title>
+		<link rel="shorcut icon" type="image/png" href="/assets/img/icon.png">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+	<body>
+		<div class="wrapper">
+		<div class="side-div">
+			<div class="nav-wrapper">
+				<a class="avatar" href="/"><img src="https://avatars.githubusercontent.com/u/77435397?"></img></a>
+				<nav class="links">
+	<a href="/about/">About</a>
+	<a href="/posts/">Blog</a>
+	<a href="/projects/">Projects</a>
+</nav>
+
+			</div>
+		</div>
+		<div class="centre-div">
+			<section>
+				<div style="margin-left:40%;"><img src="/assets/img/posts/wiby.jpg" style="height:200px;width:250px;" /></div>
+<hr />
+
+<h2 align="center">The only average that matters on the modern web</h2>
+
+<p>Call it <em>bloat</em>, call it <em>inefficient</em>, call it whatever you want. It doesn’t matter <em>how</em> it is described, users instinctively understand what is wrong with the modern web. 
+Luke Smith recently <a href="https://www.youtube.com/watch?v=cvDyQUpaFf4">excommunicated</a> recipe sites for taking up tens of megabytes of bandwidth for a single recipe - many of 
+which contain relatively little text and image content - and Maciej Cegłowski’s <a href="https://idlewords.com/talks/website_obesity.htm">talk</a> on the subject is a real eye-opener.
+There’s a few <em>average</em> figures about the web that are quite surprising: The median webpage size is <a href="https://httparchive.org/reports/page-weight">over 2MB</a>, the average time
+to a render webpage fully is over <a href="https://backlinko.com/page-speed-stats">10 seconds</a> on desktop and double that on mobile clients, unsurprisingly, the average connection 
+speed worldwide was <a href="https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf">~5Mbps</a> in 2015. What does this all culminate to? An 
+averagely shitty experience accessing the modern web.</p>
+
+<p>The <em>average</em> modern website is optimisied for the <em>average</em> user*<sub>1</sub>, this works in theory as internet speeds and mobile data packages increase in volume year-on-year*<sub>1</sub>. However, this
+cuts off a specific kind of user, the user with slow internet, a minimal data package, or both of these things - this, as Dan Luu points out in his <a href="https://danluu.com/web-bloat">article on web bloat</a>,
+usually means people living in the developing world, however, real, factual, home-grown Americans <a href="https://1-minute-modem.branchable.com">deal with this issue</a> as well.</p>
+
+<h2>Appendix/Footnotes:</h2>
+
+<p>*<sub>1</sub> You will notice that I neglected to correct my own point here, the average <em>worldwide</em> user isn’t actually the one that web developers design their webpages for, no no, as you will find out, the target
+audience of these bloated pages actually have far-above-average connection speeds which increase in speed year-on-year, covering up the issue.</p>
+
+<p>*<sub>2</sub> If you live in the United Kingdom or keep up with it’s daily news, you might be aware of the UK government’s near-obsessive track record with broadband schemes, whether it’s the opposition’s idea of 
+<a href="https://labour.org.uk/press/british-broadband-labour-sets-out-mission-to-connect-communities-across-britain-by-delivering-free-full-fibre-broadband-for-all/">free broadband (lulz)</a>, or the Conservatives’s belief 
+that everyone should have the <a href="https://www.bbc.com/news/technology-50042720">fastest option possible</a> which, somehow, will deliver <a href="https://www.gov.uk/government/news/the-benefits-of-broadband">untold economic growth</a>. 
+I’m obviously not a proponent of the idea that everyone in the country should have gigabit internet - particularly because I think it is entirely unpractical - but I am in favour of increasing availability
+and reliability of internet coverage in the UK. The median internet speed in the United Kingdom is <a href="https://www.fastmetrics.com/internet-connection-speed-by-country.php#median-internet-speeds-2020">28.51Mbps/8.87Mbps</a> 
+(up/down), <a href="https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance">less than 30%</a> of connected households have &lt;30Mbps, and 
+<a href="https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance">20%</a> of the populace currently do not have a broadband connection. These stats are 
+generally inline with <em>some</em> of Europe (I should note that whilst mean speeds are higher in much of Western Europe, median speeds paint a different picture) and, in terms of 
+<a href="https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-2018/interactive-report">coverage</a>, most regions have a high availability of broadband (without
+regard for speed) - interestingly, the county I reside in has one of the worst coverage statistics in the country. It is important to mentioned these statistics moving forward as it
+ may help to explain one potential reason that the modern internet is such a steaming heap.</p>
+
+<p>Let’s take a surface-level dive into <a href="https://wiby.me/">Wiby</a>, a search engine that indexes <em>classic</em> web-pages, generally web pages that have a small <em>page weight</em> (the size of the website which, in turn, impacts its load speed),
+minimal or zero javascript, and minimal use of “scripts/css for cosmetic effect”.</p>
+
+<p>Web bloat is not <em>necessarily</em> a problem with webpages generally (although developers are also to blame for this foul mess but we will get to them shortly), rather this is a problem indicative of 
+webpage indexing guidelines. For example: Google’s <a href="https://developers.google.com/search/docs/advanced/guidelines/overview">guidelines</a>
+dictate the do’s and dont’s of the www, not a terrible idea given that much of this advice pertains to keeping malicious sites off their search results top spot but this has, with time, favoured a particular 
+brand of web-devvery that puts the design of the web in the hands of marketing-types. Marketers have taken these guidelines to laughable new heights, where, up here, there are only two rules: <em>a)</em> 
+Google needs to find your site and rank it highly by some arbitrary metric - that means adding hugely over-complicated landing pages and having blog posts on sites that don’t want or need them, and <em>b)</em> 
+the noobs need to buy your shit*<sub>1</sub>. Somewhat absent is the idea that webpages should contain useful or interesting information that is easy to access and read.</p>
+ 
+			</section>
+		</div>
+		</div>
+	</body>
+	<footer>
+		<div class="foot-wrapper">
+	<div class="foot-icons">
+		<a href="https://github.com/gerlofs"><img src="/assets/img/GitHub-Mark-32px.png"></img></a>
+		<a href="https://fosstodon.org/@gerlofs"><img src="/assets/img/Mastodon.png" style="height:32px;width:32px";></img></a>
+	</div>
+	<div class="foot-pledge">
+		<p> This site was built with <a href="https://jekyllrb.com">Jekyll</a></p>
+		<p style="color: black;"> Icon taken from <a style="color: black;" href="https://www.flaticon.com/free-icon/pigeon_1196600">here...</a></p>
+	</div>
+</div>
+
+	</footer>

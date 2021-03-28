@@ -1,7 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-21T16:08:39+00:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Kodibox</title><link href="/2021/03/21/kodibox.html" rel="alternate" type="text/html" title="Kodibox" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>/2021/03/21/kodibox</id><content type="html" xml:base="/2021/03/21/kodibox.html">&lt;h3&gt;In Progress... &lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-28T20:26:00+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Minweb</title><link href="/2021/03/25/minweb.html" rel="alternate" type="text/html" title="Minweb" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>/2021/03/25/minweb</id><content type="html" xml:base="/2021/03/25/minweb.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/wiby.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;h2 align=&quot;center&quot;&gt;A sub £200 streaming solution&lt;/h2&gt;
+&lt;h2 align=&quot;center&quot;&gt;The only average that matters on the modern web&lt;/h2&gt;
+
+&lt;p&gt;Call it &lt;em&gt;bloat&lt;/em&gt;, call it &lt;em&gt;inefficient&lt;/em&gt;, call it whatever you want. It doesn’t matter &lt;em&gt;how&lt;/em&gt; it is described, users instinctively understand what is wrong with the modern web. 
+Luke Smith recently &lt;a href=&quot;https://www.youtube.com/watch?v=cvDyQUpaFf4&quot;&gt;excommunicated&lt;/a&gt; recipe sites for taking up tens of megabytes of bandwidth for a single recipe - many of 
+which contain relatively little text and image content - and Maciej Cegłowski’s &lt;a href=&quot;https://idlewords.com/talks/website_obesity.htm&quot;&gt;talk&lt;/a&gt; on the subject is a real eye-opener.
+There’s a few &lt;em&gt;average&lt;/em&gt; figures about the web that are quite surprising: The median webpage size is &lt;a href=&quot;https://httparchive.org/reports/page-weight&quot;&gt;over 2MB&lt;/a&gt;, the average time
+to a render webpage fully is over &lt;a href=&quot;https://backlinko.com/page-speed-stats&quot;&gt;10 seconds&lt;/a&gt; on desktop and double that on mobile clients, unsurprisingly, the average connection 
+speed worldwide was &lt;a href=&quot;https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf&quot;&gt;~5Mbps&lt;/a&gt; in 2015. What does this all culminate to? An 
+averagely shitty experience accessing the modern web.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;average&lt;/em&gt; modern website is optimisied for the &lt;em&gt;average&lt;/em&gt; user*&lt;sub&gt;1&lt;/sub&gt;, this works in theory as internet speeds and mobile data packages increase in volume year-on-year*&lt;sub&gt;1&lt;/sub&gt;. However, this
+cuts off a specific kind of user, the user with slow internet, a minimal data package, or both of these things - this, as Dan Luu points out in his &lt;a href=&quot;https://danluu.com/web-bloat&quot;&gt;article on web bloat&lt;/a&gt;,
+usually means people living in the developing world, however, real, factual, home-grown Americans &lt;a href=&quot;https://1-minute-modem.branchable.com&quot;&gt;deal with this issue&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;h2&gt;Appendix/Footnotes:&lt;/h2&gt;
+
+&lt;p&gt;*&lt;sub&gt;1&lt;/sub&gt; You will notice that I neglected to correct my own point here, the average &lt;em&gt;worldwide&lt;/em&gt; user isn’t actually the one that web developers design their webpages for, no no, as you will find out, the target
+audience of these bloated pages actually have far-above-average connection speeds which increase in speed year-on-year, covering up the issue.&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;2&lt;/sub&gt; If you live in the United Kingdom or keep up with it’s daily news, you might be aware of the UK government’s near-obsessive track record with broadband schemes, whether it’s the opposition’s idea of 
+&lt;a href=&quot;https://labour.org.uk/press/british-broadband-labour-sets-out-mission-to-connect-communities-across-britain-by-delivering-free-full-fibre-broadband-for-all/&quot;&gt;free broadband (lulz)&lt;/a&gt;, or the Conservatives’s belief 
+that everyone should have the &lt;a href=&quot;https://www.bbc.com/news/technology-50042720&quot;&gt;fastest option possible&lt;/a&gt; which, somehow, will deliver &lt;a href=&quot;https://www.gov.uk/government/news/the-benefits-of-broadband&quot;&gt;untold economic growth&lt;/a&gt;. 
+I’m obviously not a proponent of the idea that everyone in the country should have gigabit internet - particularly because I think it is entirely unpractical - but I am in favour of increasing availability
+and reliability of internet coverage in the UK. The median internet speed in the United Kingdom is &lt;a href=&quot;https://www.fastmetrics.com/internet-connection-speed-by-country.php#median-internet-speeds-2020&quot;&gt;28.51Mbps/8.87Mbps&lt;/a&gt; 
+(up/down), &lt;a href=&quot;https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance&quot;&gt;less than 30%&lt;/a&gt; of connected households have &amp;lt;30Mbps, and 
+&lt;a href=&quot;https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance&quot;&gt;20%&lt;/a&gt; of the populace currently do not have a broadband connection. These stats are 
+generally inline with &lt;em&gt;some&lt;/em&gt; of Europe (I should note that whilst mean speeds are higher in much of Western Europe, median speeds paint a different picture) and, in terms of 
+&lt;a href=&quot;https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-2018/interactive-report&quot;&gt;coverage&lt;/a&gt;, most regions have a high availability of broadband (without
+regard for speed) - interestingly, the county I reside in has one of the worst coverage statistics in the country. It is important to mentioned these statistics moving forward as it
+ may help to explain one potential reason that the modern internet is such a steaming heap.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a surface-level dive into &lt;a href=&quot;https://wiby.me/&quot;&gt;Wiby&lt;/a&gt;, a search engine that indexes &lt;em&gt;classic&lt;/em&gt; web-pages, generally web pages that have a small &lt;em&gt;page weight&lt;/em&gt; (the size of the website which, in turn, impacts its load speed),
+minimal or zero javascript, and minimal use of “scripts/css for cosmetic effect”.&lt;/p&gt;
+
+&lt;p&gt;Web bloat is not &lt;em&gt;necessarily&lt;/em&gt; a problem with webpages generally (although developers are also to blame for this foul mess but we will get to them shortly), rather this is a problem indicative of 
+webpage indexing guidelines. For example: Google’s &lt;a href=&quot;https://developers.google.com/search/docs/advanced/guidelines/overview&quot;&gt;guidelines&lt;/a&gt;
+dictate the do’s and dont’s of the www, not a terrible idea given that much of this advice pertains to keeping malicious sites off their search results top spot but this has, with time, favoured a particular 
+brand of web-devvery that puts the design of the web in the hands of marketing-types. Marketers have taken these guidelines to laughable new heights, where, up here, there are only two rules: &lt;em&gt;a)&lt;/em&gt; 
+Google needs to find your site and rank it highly by some arbitrary metric - that means adding hugely over-complicated landing pages and having blog posts on sites that don’t want or need them, and &lt;em&gt;b)&lt;/em&gt; 
+the noobs need to buy your shit*&lt;sub&gt;1&lt;/sub&gt;. Somewhat absent is the idea that webpages should contain useful or interesting information that is easy to access and read.&lt;/p&gt;</content><author><name></name></author><category term="unlisted" /><summary type="html"></summary></entry><entry><title type="html">Kodibox</title><link href="/2021/03/21/kodibox.html" rel="alternate" type="text/html" title="Kodibox" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>/2021/03/21/kodibox</id><content type="html" xml:base="/2021/03/21/kodibox.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/project/kodi/kodibox.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h2 align=&quot;center&quot;&gt;Go stream-less for under $200&lt;/h2&gt;
 &lt;h3&gt;Weapon of choice:&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://kodi.tv/&quot;&gt;Kodi&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Adapted from:&lt;/h3&gt;
@@ -9,39 +51,71 @@
 &lt;h3&gt;Summary:&lt;/h3&gt;
 
 &lt;p&gt;Like many UK-based taxpayers, I don’t like or need the TV license. For years I have been connecting my old Macbook to the television and using the 
-contemporary streaming solutions - Netflix and the like. I decided to replace this solution with something a little smaller and more energy efficient: 
-A Raspberry Pi (RBP from now on) running the popular open-source &lt;em&gt;Kodi&lt;/em&gt; software and LibreELEC operating system. This isn’t &lt;em&gt;much&lt;/em&gt; of a project but I 
-thought it would be useful to share a more condensed guide than the one linked above with some extra pieces of information I gained along the way…&lt;/p&gt;
+contemporary streaming solutions - Netflix and the like (I don’t &lt;em&gt;think&lt;/em&gt; I need to discuss why these streaming services are terrible for the consumer*&lt;sub&gt;1&lt;/sub&gt;)
+I decided to replace this solution with something a little smaller and more energy efficient: A Raspberry Pi (RBP from now on) running the popular open-source &lt;em&gt;Kodi&lt;/em&gt; 
+software and LibreELEC operating system. This isn’t &lt;em&gt;much&lt;/em&gt; of a project but I thought it would be useful to share a more condensed guide than the one linked above with
+ some extra pieces of information I gained along the way…&lt;/p&gt;
 
-&lt;p&gt;Here’s how to build a small media server for less than £200*:&lt;/p&gt;
+&lt;p&gt;Here’s how to build a small media center for less than £200*:&lt;/p&gt;
 
 &lt;h3&gt; Parts List: &lt;/h3&gt;
+
 &lt;ol&gt;
   &lt;li&gt;A Raspberry Pi 3/4.&lt;/li&gt;
   &lt;li&gt;A RBP power-supply (~5V, 3A).&lt;/li&gt;
+  &lt;li&gt;A micro-SD card.&lt;/li&gt;
+  &lt;li&gt;A micro-HDMI to HDMI cable (or an adapter &amp;amp; HDMI cable).&lt;/li&gt;
   &lt;li&gt;An on/off USB-C switch (optional).&lt;/li&gt;
   &lt;li&gt;A RBP case (optional).&lt;/li&gt;
   &lt;li&gt;An external HDD or SSD (optional).&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3&gt; How do? &lt;/h3&gt;
+
 &lt;ol&gt;
+  &lt;li&gt;Build the case and fit the RBP, this part &lt;em&gt;should&lt;/em&gt; be fairly obvious if you have a good quality case.&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
   &lt;li&gt;If you’re opting to use Kodi for media files (e.g. DVD rips), an external hard drive can be loaded up and connected to the RBP Kodi box. Ensure the 
 drive is formatted to NTFS or ext4 or it won’t be usable with the RBP.&lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;If you’re planning on using WiFi with the RBP (e.g. for the Kodi remote app), mess with your router to stop the RBP from occupying the 5GHz band - the
+wifi on the RBP is terrible enough without the reduced range/penetration.*&lt;sub&gt;3&lt;/sub&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3&gt; Appendix: &lt;/h3&gt;
-&lt;p&gt;* This is a guide price that assumes an external drive is being used. I opted for a 5TB HDD which pushed the cost of this project up to ~£165.&lt;/p&gt;</content><author><name></name></author><category term="unlisted" /><summary type="html">In Progress...</summary></entry><entry><title type="html">Greplike</title><link href="/2021/02/05/grep.html" rel="alternate" type="text/html" title="Greplike" /><published>2021-02-05T00:00:00+00:00</published><updated>2021-02-05T00:00:00+00:00</updated><id>/2021/02/05/grep</id><content type="html" xml:base="/2021/02/05/grep.html">&lt;h3&gt;In Progress... &lt;/h3&gt;
+&lt;p&gt;*&lt;sub&gt;1&lt;/sub&gt; There’s an &lt;a href=&quot;https://www.forbes.com/sites/blakemorgan/2019/02/19/what-is-the-netflix-effect/?sh=ca883e56409b&quot;&gt;article&lt;/a&gt; in Forbes about how Netflix is bound to destroy traditional TV and cinema
+because it’s giving consumers what they want, and what do they want? Supposedly they want &lt;em&gt;“products that are easy to use and tailored to match their preferences”&lt;/em&gt;, which, I suppose, is true but that description
+certainly doesn’t suit Netflix in its current state. If you’ve never had the pleasure, Netflix is easy to use if, and only if, you’re open to consuming specific programming without much thought. It’s a bundle of
+ both popular releases and in-house, barely passable movies and series that are selectively added and removed at will with little warning given to the user. Owing more to the &lt;em&gt;Spotify effect&lt;/em&gt; than anything else,
+it also lacks any real form of useful user recommendations other than giving you more of the same thing and plastering the service with its own releases as often as possible.
+There are other &lt;a href=&quot;https://mubi.com/&quot;&gt;services&lt;/a&gt; that offer a more movie-centric approach with an &lt;em&gt;real&lt;/em&gt; selection process. It is also difficult and, I would argue, unreasonable, to ignore the point that the typical
+ consumer &lt;em&gt;should&lt;/em&gt; really &lt;strong&gt;care&lt;/strong&gt; &lt;em&gt;how&lt;/em&gt; they spend their money when it comes to media, in order to decide who they give their money to, rather than pay for the convenient approach and allow Netflix to decide how to
+ split the pot.&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;2&lt;/sub&gt; This is a guide price that assumes an external drive is being used. I opted for a 5TB HDD which pushed the cost of this project up to ~£165.&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;3&lt;/sub&gt; I had some issues with audio playback via the micro-HDMI output, this can be resolved by tunneling into the RBP and adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hdmi_drive=2&lt;/code&gt; to the 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/flash/config.txt&lt;/code&gt; file. More information on this can be found &lt;a href=&quot;https://forum.libreelec.tv/thread/20621-no-audio-on-hdmi-from-new-pi4b-a-common-prob-it-seems/&quot;&gt;here&lt;/a&gt;. Additionally, one of the micro-HDMI ports
+doesn’t support audio playback, I guess.&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;4&lt;/sub&gt; In fact, the WiFi on RBP4 is such a joke - with issues ranging from WPA authentication, to the 5GHz band, to screen resolution in &lt;a href=&quot;https://twitter.com/assortedhackery/status/1200056633898029061&quot;&gt;more&lt;/a&gt;
+than one &lt;a href=&quot;https://forum.libreelec.tv/thread/21096-rpi4-can-t-use-wifi-network-error-input-output-eror/&quot;&gt;case&lt;/a&gt; - I would just recommend not using it if possible. I’m using the Kodibox as a glorified, offline, media center so 
+this is not really an issue in my case.&lt;/p&gt;</content><author><name></name></author><category term="unlisted" /><summary type="html"></summary></entry><entry><title type="html">Greplike</title><link href="/2021/02/05/grep.html" rel="alternate" type="text/html" title="Greplike" /><published>2021-02-05T00:00:00+00:00</published><updated>2021-02-05T00:00:00+00:00</updated><id>/2021/02/05/grep</id><content type="html" xml:base="/2021/02/05/grep.html">&lt;p&gt;&lt;img style=&quot;padding-left:35%;height:25%;width:25%;&quot; src=&quot;/assets/img/project/grep.jpg&quot; /&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
-&lt;h2 align=&quot;center&quot;&gt;A pattern-matching file parser and regular expression engine&lt;/h2&gt;
-&lt;h3&gt;Weapon of choice:&lt;/h3&gt;
+&lt;h2 align=&quot;center&quot;&gt;A regular expression engine and string-matching tool&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gerlofs/greplike&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Written in:&lt;/h3&gt;
 &lt;p&gt;C&lt;/p&gt;
 &lt;h3&gt;Adapted from:&lt;/h3&gt;
 &lt;p&gt;Greplike is an extension of &lt;a href=&quot;https://www.oreilly.com/library/view/beautiful-code/9780596510046/ch01.html&quot;&gt;Pike’s regular expression matcher &lt;/a&gt; and is, thus, also inspired by &lt;a href=&quot;https://swtch.com/~rsc/regexp/&quot;&gt;Russ Cox’s series on regular expressions&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Summary:&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Greplike&lt;/em&gt; is the first project in a series surrounding compiler design. Compilers use a lexical analysis step - see: &lt;a href=&quot;https://www.amazon.co.uk/Introduction-Compiler-Undergraduate-Computer-Science/dp/3319669656&quot;&gt;Mongensen’s introduction&lt;/a&gt;
+for more information - which requires a regular expression engine to parse plain-text to tokens. In order to correctly write this component, knowledge of regular expressions and pattern matching is required. &lt;em&gt;Greplike&lt;/em&gt; is a black-box
+re-write of the &lt;em&gt;grep&lt;/em&gt; tool using concepts outlined by Pike and Kernighan in &lt;a href=&quot;https://www.amazon.co.uk/Practice-Programming-Professional-Computing/dp/020161586X&quot;&gt;The Practice of Programming&lt;/a&gt;. The tool is a somewhat-less-efficient*&lt;sub&gt;2&lt;/sub&gt;, 
+non-finite-automata version of grep, that builds upon Pike’s initial sub-100 sloc engine whilst applying many of the improvements outlined in the subsequent discussion by Kernighan (linked to in the &lt;em&gt;Adapted From&lt;/em&gt; section).&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Greplike&lt;/em&gt; is a rudimentary, toy, pattern-matching tool that can be used, &lt;em&gt;like grep&lt;/em&gt;, for parsing through files to find occurances of a string using literals or a regular expression. Unlike the &lt;em&gt;grep&lt;/em&gt; tool, &lt;em&gt;greplike&lt;/em&gt;
 has some limitations including a lesser number of command-line and engine options available. For example: the user cannot invert the search using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-v&lt;/code&gt; or ignore case using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-y&lt;/code&gt; 
@@ -57,16 +131,70 @@ meta-characters:&lt;/p&gt;
 
 &lt;p&gt;Additionally greplike does not support metacharacters inside groups of classes (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(a+b+c)+d&lt;/code&gt; is not a valid regular expression in greplike).&lt;/p&gt;
 
-&lt;h3&gt;A quick, shallow dive into regular expression engines&lt;/h3&gt;
+&lt;h3&gt;Using the tool:&lt;/h3&gt;
 
-&lt;p&gt;If you’re uncertain about what a regular expression is, I recommend reading Friedl’s &lt;em&gt;Mastering Regular Expressions&lt;/em&gt;. Essentially there are two viable ways of parsing and matching a text buffer
-using regular expressions. Non-deterministic finite automata (NFA)-based matchers (regex enginers) rely heavily on &lt;em&gt;backtracking&lt;/em&gt;*&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;There are a limited number of options available in &lt;em&gt;greplike&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;-f&lt;/strong&gt;: Define a list of files to parse.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;-e&lt;/strong&gt;: Define a regular expression to serve as a matching set.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;-n&lt;/strong&gt;: Print the line number of each successful match.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;-i&lt;/strong&gt;: Print the filename of the file in which a match was found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;-c&lt;/strong&gt;: Count and subsequently print the number of matching occurences.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;General case:&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./greplike &amp;lt;expression&amp;gt; &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Match with line numbers:&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./greplike -f &amp;lt;filename&amp;gt; -e &amp;lt;expression&amp;gt; -n&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Testing:&lt;/h3&gt;
+
+&lt;p&gt;Bash scripts are located in the &lt;em&gt;/tests/&lt;/em&gt; folder, there are five test cases*&lt;sub&gt;3&lt;/sub&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Valid tests: A set of valid expressions are run against a single file full of randomised text (ASCII only).&lt;/li&gt;
+  &lt;li&gt;Invalid tests: A set of invalid expressions are run against the above file, all should fail with a return code != 0.&lt;/li&gt;
+  &lt;li&gt;Single-file test: A set of files and expressions are used as greplike arguments, for each the return code should be 0.&lt;/li&gt;
+  &lt;li&gt;Multi-file test: A set of expressions are run against all three files (dummy&lt;em&gt;n&lt;/em&gt;.txt), each should return code 0.&lt;/li&gt;
+  &lt;li&gt;Timing test: The above test is run using grep and greplike, the times are returned.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h3&gt;Appendix:&lt;/h3&gt;
-&lt;p&gt;*&lt;sub&gt;1&lt;/sub&gt; | I, currently, have no plans to keep &lt;em&gt;greplike&lt;/em&gt; up-to-date and implement upon the documented functionality. As stated, &lt;em&gt;greplike&lt;/em&gt; was an exercise in learning about string parsing, regular 
-expressions, and finite automata.&lt;/p&gt;
+&lt;p&gt;*&lt;sub&gt;1&lt;/sub&gt; | I, currently, have no plans to keep &lt;em&gt;greplike&lt;/em&gt; up-to-date and implement upon the documented functionality. As stated, &lt;em&gt;greplike&lt;/em&gt; was an exercise in learning about string parsing, and
+regular expressions. There will be an finite-automata-centric version which is required for the lexical parsing stage of a compiler.&lt;/p&gt;
 
-&lt;p&gt;*&lt;sub&gt;2&lt;/sub&gt; | Backtracking is, essentially, a quality that arises in certain types of algorithmic problems such as constraint statisfaction problems (e.g. a sudoku solver) in which a successful
-approach is based upon a condition that can sometimes be partially valid (e.g. Friedl presents the expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;to(nite|knight|night)&lt;/code&gt; as an example, where testing and removing two of the three 
+&lt;p&gt;*&lt;sub&gt;2&lt;/sub&gt; | I say this because, as Cox discusses, expression matching parsers &lt;em&gt;can&lt;/em&gt; be horrifically inefficient in certain edge cases due to backtracking. Backtracking is, essentially, 
+a quality that arises in certain types of algorithmic problems such as constraint statisfaction problems (e.g. a sudoku solver) in which a successful
+approach is based upon a condition that can sometimes be partially valid (e.g. &lt;a href=&quot;https://www.amazon.co.uk/Mastering-Regular-Expressions-Powerful-Techniques/dp/1565922573&quot;&gt;Friedl&lt;/a&gt;
+ presents the expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;to(nite|knight|night)&lt;/code&gt; as an example, where testing and removing two of the three 
 invalid options is required). A backtracked approach requires a variable to be stored (in this case the regular expression string) that can be reverted-to in a scenario where a partial match
-eventually results in being invalid (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tonighz&lt;/code&gt; will not match &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;to(nite|knight|night)&lt;/code&gt; until the very last character check).&lt;/p&gt;</content><author><name></name></author><category term="unlisted" /><summary type="html">In Progress...</summary></entry></feed>
+eventually results in being invalid (e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tonighz&lt;/code&gt; will not match &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;to(nite|knight|night)&lt;/code&gt; until the very last character check).&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;3&lt;/sub&gt; | I have plans to flesh out this testing to include checks for number of matches and possibly shift this over to python or some other language to write a test harness, this
+isn’t a priority though.&lt;/p&gt;</content><author><name></name></author><category term="project" /><summary type="html"></summary></entry></feed>

@@ -21,7 +21,6 @@
 						{% for post in tag[1] limit:5 %}	
 							<div class="posts-item">
 							<a href="{{ post.url }}"><img class="posts-img" src="{{post.cover | asset_url}}"></img>
-								<img class="posts-gif" src="{{post.cover-active | asset_url}}"></img></a>
 							<a href="{{ post.url }}" class="posts-text">{{ post.title }}</a>
 							</div>
 						{% endfor %}

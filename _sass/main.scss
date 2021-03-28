@@ -113,26 +113,13 @@ div.posts-container {
 	}
 
 	img.posts-img {
-		z-index: 2;
-		position:absolute;
-		top:0;
-		left:0;
 		height: 100px;
 		width: 100px;	
+		border: 5px solid #ffffff;	
 	}
 
-	img.posts-gif { 
-		z-index: 1;
-		position:absolute;
-		top:0;
-		left:0;
-		height: 100px;
-		width: 100px;
-		padding-right: 10px;
-	}
-	
 	img.posts-img:hover {
-		opacity:0;
+		border: 5px solid #000000;
 	}
 
 	a:link, a:visited {

@@ -1,0 +1,50 @@
+---
+layout: front
+title: "Minweb"
+tags: unlisted
+
+---
+<div style="margin-left:40%;"><img src="/assets/img/posts/wiby.jpg" style="height:200px;width:250px;"/></div>
+---
+
+<h2 align="center">The only average that matters on the modern web</h2>
+
+Call it *bloat*, call it *inefficient*, call it whatever you want. It doesn't matter *how* it is described, users instinctively understand what is wrong with the modern web. 
+Luke Smith recently [excommunicated](https://www.youtube.com/watch?v=cvDyQUpaFf4) recipe sites for taking up tens of megabytes of bandwidth for a single recipe - many of 
+which contain relatively little text and image content - and Maciej Cegłowski's [talk](https://idlewords.com/talks/website_obesity.htm) on the subject is a real eye-opener.
+There's a few *average* figures about the web that are quite surprising: The median webpage size is [over 2MB](https://httparchive.org/reports/page-weight), the average time
+to a render webpage fully is over [10 seconds](https://backlinko.com/page-speed-stats) on desktop and double that on mobile clients, unsurprisingly, the average connection 
+speed worldwide was [~5Mbps](https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf) in 2015. What does this all culminate to? An 
+averagely shitty experience accessing the modern web. 
+
+The *average* modern website is optimisied for the *average* user\*<sub>1</sub>, this works in theory as internet speeds and mobile data packages increase in volume year-on-year\*<sub>1</sub>. However, this
+cuts off a specific kind of user, the user with slow internet, a minimal data package, or both of these things - this, as Dan Luu points out in his [article on web bloat](https://danluu.com/web-bloat),
+usually means people living in the developing world, however, real, factual, home-grown Americans [deal with this issue](https://1-minute-modem.branchable.com) as well.
+
+<h2>Appendix/Footnotes:</h2>
+
+\*<sub>1</sub> You will notice that I neglected to correct my own point here, the average *worldwide* user isn't actually the one that web developers design their webpages for, no no, as you will find out, the target
+audience of these bloated pages actually have far-above-average connection speeds which increase in speed year-on-year, covering up the issue.
+
+\*<sub>2</sub> If you live in the United Kingdom or keep up with it's daily news, you might be aware of the UK government's near-obsessive track record with broadband schemes, whether it's the opposition's idea of 
+[free broadband (lulz)](https://labour.org.uk/press/british-broadband-labour-sets-out-mission-to-connect-communities-across-britain-by-delivering-free-full-fibre-broadband-for-all/), or the Conservatives's belief 
+that everyone should have the [fastest option possible](https://www.bbc.com/news/technology-50042720) which, somehow, will deliver [untold economic growth](https://www.gov.uk/government/news/the-benefits-of-broadband). 
+I'm obviously not a proponent of the idea that everyone in the country should have gigabit internet - particularly because I think it is entirely unpractical - but I am in favour of increasing availability
+and reliability of internet coverage in the UK. The median internet speed in the United Kingdom is [28.51Mbps/8.87Mbps](https://www.fastmetrics.com/internet-connection-speed-by-country.php#median-internet-speeds-2020) 
+(up/down), [less than 30%](https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance) of connected households have <30Mbps, and 
+[20%](https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance) of the populace currently do not have a broadband connection. These stats are 
+generally inline with *some* of Europe (I should note that whilst mean speeds are higher in much of Western Europe, median speeds paint a different picture) and, in terms of 
+[coverage](https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-2018/interactive-report), most regions have a high availability of broadband (without
+regard for speed) - interestingly, the county I reside in has one of the worst coverage statistics in the country. It is important to mentioned these statistics moving forward as it
+ may help to explain one potential reason that the modern internet is such a steaming heap. 
+
+Let's take a surface-level dive into [Wiby](
+https://wiby.me/), a search engine that indexes *classic* web-pages, generally web pages that have a small *page weight* (the size of the website which, in turn, impacts its load speed),
+minimal or zero javascript, and minimal use of "scripts/css for cosmetic effect".
+
+Web bloat is not *necessarily* a problem with webpages generally (although developers are also to blame for this foul mess but we will get to them shortly), rather this is a problem indicative of 
+webpage indexing guidelines. For example: Google's [guidelines](https://developers.google.com/search/docs/advanced/guidelines/overview)
+dictate the do's and dont's of the www, not a terrible idea given that much of this advice pertains to keeping malicious sites off their search results top spot but this has, with time, favoured a particular 
+brand of web-devvery that puts the design of the web in the hands of marketing-types. Marketers have taken these guidelines to laughable new heights, where, up here, there are only two rules: *a)* 
+Google needs to find your site and rank it highly by some arbitrary metric - that means adding hugely over-complicated landing pages and having blog posts on sites that don't want or need them, and *b)* 
+the noobs need to buy your shit\*<sub>1</sub>. Somewhat absent is the idea that webpages should contain useful or interesting information that is easy to access and read. 
