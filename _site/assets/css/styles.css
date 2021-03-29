@@ -34,11 +34,17 @@ div.centre-div li { font: 14px "Helvetica Neue", Helvetica, sans-serif; }
 
 div.posts-container { display: flex; flex-wrap: wrap; flex-direction: row; align-content: center; }
 
-div.posts-container div.posts-item { position: relative; height: 90px; padding: 0px; margin-top: 0px; margin-bottom: 20px; flex: 0 0 100%; }
+div.posts-container div.posts-item { width: 100%; display: flex; flex-direction: row; }
 
 div.posts-container img.posts-img { height: 100px; width: 100px; border: 5px solid #ffffff; }
 
 div.posts-container img.posts-img:hover { border: 5px solid #000000; }
+
+div.posts-container div.post-text { padding-top: 2%; padding-left: 0.5%; display: flex; flex-direction: column; }
+
+div.posts-container div.post-text a { text-decoration: none; font-family: "Tex Gyre Adventor", Helvetica, sans-serif; font-size: 30px; font-weight: bold; }
+
+div.posts-container div.post-text .post-meta { padding-left: 1%; font-family: Helvetica, sans-serif; font-size: 18px; font-weight: normal; }
 
 div.posts-container a:link, div.posts-container a:visited { color: black; }
 

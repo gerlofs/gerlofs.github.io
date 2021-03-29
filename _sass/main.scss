@@ -104,13 +104,10 @@ div.posts-container {
 	align-content: center;
 
 	div.posts-item {
-		position:relative;
-		height: 90px;
-		padding: 0px;
-		margin-top: 0px;
-		margin-bottom: 20px;
-		flex: 0 0 100%;
-	}
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}	
 
 	img.posts-img {
 		height: 100px;
@@ -120,6 +117,27 @@ div.posts-container {
 
 	img.posts-img:hover {
 		border: 5px solid #000000;
+	}
+
+	div.post-text {
+		padding-top: 2%;
+		padding-left: 0.5%;
+		display: flex;
+		flex-direction: column;
+		
+		a {
+			text-decoration: none;	
+			font-family: "Tex Gyre Adventor", Helvetica, sans-serif;
+			font-size: 30px;	
+			font-weight: bold;			
+		}
+
+		.post-meta {
+			padding-left: 1%;
+			font-family: Helvetica, sans-serif;
+			font-size: 18px;
+			font-weight: normal;	
+		}
 	}
 
 	a:link, a:visited {
@@ -132,7 +150,7 @@ div.posts-container {
 		top: 40px;
 		text-decoration: none;	
 		font-family: "Tex Gyre Adventor", Helvetica, sans-serif;
-		font-size: 30px;
+		font-size: 30px;	
 		font-weight: bold;	
 	}
 }
