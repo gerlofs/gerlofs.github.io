@@ -1,6 +1,6 @@
 ---
 layout: front
-title: "Minweb"
+title: "A bloat ride"
 tags: blog
 
 ---
@@ -9,7 +9,7 @@ tags: blog
 <div style="margin-left:40%;"><img src="/assets/img/posts/minweb/wiby.jpg" style="height:200px;width:250px;"/></div>
 ---
 
-<h2 align="center">A bloattrip through a day of HN articles</h2>
+<h2 align="center">A bloat ride through a day of HN articles</h2>
 
 Call it *bloat*, call it *inefficient*, call it whatever you want. It doesn't matter *how* it is described, users instinctively understand what is wrong with the modern web. 
 Luke Smith recently [excommunicated](https://www.youtube.com/watch?v=cvDyQUpaFf4) recipe sites for taking up tens of megabytes of bandwidth for a single recipe - many of 
