@@ -15,7 +15,7 @@ Call it *bloat*, call it *inefficient*, call it whatever you want. It doesn't ma
 Luke Smith recently [excommunicated](https://www.youtube.com/watch?v=cvDyQUpaFf4) recipe sites for taking up tens of megabytes of bandwidth for a single recipe - many of 
 which contain relatively little text and image content. ~10MB sounds a pittance to a user of the modern web, where almost every article is rife with fancy javascript wizardry, 
 pagination, and boatloads of other such bloatware\*<sub>1</sub>. However, there are many, existing arguments (which are also more eloquent than mine) against the ever growing size of page weight -
-that is, the size of web pages - such as Dan Luu's article on [restrictive web bloat for rural internet users](https://danluu.com/web-bloat) and Maciej Cegłowski's 
+that is, the size of web pages - such as Dan Luu's article on [restrictive web bloat for rural internet users](https://danluu.com/web-bloat)\*<sub>0</sub> and Maciej Cegłowski's 
 [talk](https://idlewords.com/talks/website_obesity.htm) which jointly reveal that, regardless of the reasons behind said web bloat, the implementation of multi-megabyte webpages
 both serves little purpose and consequently restricts access a to given webpage. To demonstrate the problem, I'm going to take a leaf out of Maciej's book and pick some articles and webpages at random and take a look at their page weight. Infact, if you take anything away
 from this post, I hope it is that *you* should go away and try this for yourself. Only upon doing so will you realise that this is not a cherry-picking exercise and, rather, is a real phenomenon that
@@ -95,6 +95,8 @@ You do **not** need to import jquery into your DOM to swap between [light mode a
 >5: If you find a blog you like, add it to an [RSS feed](https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml) and build up a subscription portfolio of small, informative sites.
 
 <h2>Appendix/Footnotes:</h2>
+
+\*<sub>0</sub> Note that one of Dan's examples is [codinghorror](https://blog.codinghorror.com/) (no pun intended, I guess), one of the most egregious examples of web bloat in a blog site, 45.15MB!
 
 \*<sub>1</sub> Here's a comprehensive list: tracking ads, cookie pop-ups, pointless embedded youtube clips that *could* be linked to, hunkering slabs of CSS with no *useful* purpose, any javascript that is
 completely irrelevant to the serving of the article I am currently reading, and uncompressed images containing metadata such as XMP, IPTC, colour profiles, etc.
