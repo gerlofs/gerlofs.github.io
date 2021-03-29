@@ -23,19 +23,21 @@ from this post, I hope it is that *you* should go away and try this for yourself
  authors and web-devs know about but cannot seem to (or do not want to) resolve. But first, let's talk about some *averages*.
 
 There's a few *average* figures about the web that are quite surprising: The median webpage size is [over 2MB](https://httparchive.org/reports/page-weight), the average time
-to a render webpage fully is over [10 seconds](https://backlinko.com/page-speed-stats) on desktop and double that on mobile clients, unsurprisingly, the average connection 
+to render a webpage fully is over [10 seconds](https://backlinko.com/page-speed-stats) on desktop and double that on mobile clients. Unsurprisingly, the average connection 
 speed worldwide was [~5Mbps](https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf) in 2015 - note that speeds have most likely improved since 2015.
-What does this all culminate to? An averagely shitty experience accessing the modern web. The *average* modern website is optimisied for the *average* user\*<sub>2</sub>, this works in theory as internet speeds 
+What does this all culminate to? An averagely shitty experience accessing the modern web. The *average* modern website is optimised for the *average* user\*<sub>2</sub>, this works in theory as internet speeds 
 and mobile data packages increase in volume year-on-year\*<sub>3</sub>. However, this cuts off a specific kind of user, the user with slow internet, a minimal data package, 
 or both of these things - this, as Dan Luu points out, usually means people living in the developing world or in rural areas\*<sub>4</sub>. Keep this in mind as we move forward, I don't think any of the
 following examples would be impossible to load via a satellite link in Ethiopia, but Dan gives a few examples of sites that *you* probably use every day that are either borderline-impossible or literally
 impossible to load and use via a rural internet link.
 
 Let's look at some examples. Firstly, I'll copy Maciej's approach and ridicule a [particular example](https://fetchprofits.com/website-code-bloat/) of an article that discusses how website bloat can
-negatively impact your website and, thus, conversions - marketing lingo for getting lurker plebians to buy your wares. The article, which, without edits to the spacing, can fit comfortably on three sides of A4, tells
+negatively impact your traffic and, thus, conversions - marketing lingo for getting lurker plebians to buy your wares. The article, which, without edits to the spacing, can fit comfortably on three sides of A4, tells
  people how to reduce bloat whilst weighing in at a chunky ~4MB, reduced to 2.77MB with NoScript (a Firefox utility to block Javascript), and further to 1.79MB when viewed in reader view 
 (CTRL+ALT+R on Firefox, if you are somehow unaware). The obvious reason for this is the infographic taken from [Skilled.co](https://skilled.co/resources/speed-affects-website-infographic/) which,
- as far as I'm concerned, could be replaced with a link - this would further cut the page weight (without Javascript) to less than 1MB. 
+ as far as I'm concerned, could be replaced with a link - this would further cut the page weight (without Javascript) to less than 1MB. This might *sound* like an improvement but this is still 846 bytes per
+word. To put this kind of page bloat into perspective, again, borrowing from Maciej, David Foster Wallace's *Infinite Jest*, one of the longest English novels ever written, has 543,709 words, and is still
+lighter (~1.5MB in EPUB, ~3MB in PDF) that this webpage. 
 
 The next few examples are pulled from a hour-or-so browse of HackerNews for blog-like articles, all of them are, in my opinion, *too* bloated given their content. Ben Evans's 
 [article on Amazon's income](https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws) is 3.31MB without Javascript blocking. This article fits onto less than two sides of A4, 
@@ -56,10 +58,10 @@ by Ofunne Amaka and Amber Thomas, whilst not about anything I really care about,
 <div style="margin-left:10%;"><img src="/assets/img/posts/minweb/deargod.png" style="width:909px;height:297px;"/></div>
 >>>>>>>>> *There's something seemingly absent from the above article...*
 
-News outlets are akin to Medium in that they overuse copious amounts of Javascript and unaltered images leading to a laughable page weight to text content ratio, here are some I, again, pulled from HN: 
+News outlets are akin to Medium in that they overuse copious amounts of Javascript and unaltered images leading to a laughable page weight to text content ratio. Here are some I, again, pulled from HN: 
 [This Spectator article](https://www.spectator.co.uk/article/the-beauty-of-the-ampersand-and-other-keyboard-symbols) by Hodgkinson should demonstrate the hideous nature of web bloat better than any other
 example in this post, without NoScript the page is an absolute mammoth, a 740 word essay that just about fits on a single side of A4, weighing in at 7.65MB (humorously, this means that you're taxed 10KB for every
-word read). The scripts, in this case (as is true for most media outlets on the modern web), are semi-malicious in nature. Along with the tracking cookies we've all come to know-and-despise is a gigantic footer
+word read). The scripts, in this case (as is true for most media outlets on the modern web), are semi-malicious in nature. Along with the tracking cookies we've all come to know and despise, is a gigantic footer
  that does not (yet) block the user from reading the article but declares boldly and obstructivley that we'll soon be stopped from viewing articles on the site - which is probably a good thing if we're viewing 
 via a satellite or tariffed internet connection. Chopping out the javascript removes all of this fluff but what remains is two *gigantic* images (568KB and 516KB respectively) and 800KB worth of CSS, what a waste.
 [This Guardian article](https://www.theguardian.com/us-news/2021/mar/28/chevron-lawyer-steven-donziger-ecuador-house-arrest) is a little bit better, 500KB when all the tracking cookies and pop-ups are blocked, 
@@ -88,12 +90,17 @@ a group of intelligent individuals who care about the web-obesity problem and ar
 >2: Reduce your script size by cutting out unnecessary javascript and reducing reliance on libraries. Your blog doesn't need tracking cookies. 
 You do **not** need to import jquery into your DOM to swap between [light mode and dark mode](https://www.geeksforgeeks.org/how-to-create-dark-light-mode-for-website-using-javascript-jquery/)
 
->3: Stop using blogging platforms that allow you to do neither of the above. Setting up a website is easy, there are guides on the internet about HTML and CSS, this is all you need to make a 
-[personal website](https://www.youtube.com/watch?v=3dIVesHEAzc) - using templating software or blog platforms is tempting but can result in pointless bloated websites\*<sub>6</sub>.
+>3: Replace embedded scripts (such as the embedded YouTube player) with reasonable alternatives if removing it from the page would not significantly alter the quality of the page. For example,
+there's no reason why any of the above examples could not replace the embedded player with a static string or image linking (in another tab) to the YouTube video.
 
->4: You can't avoid bloatware sites, so get NoScript (or a similar JS blocker) and an ad-blocker.
+>4: Stop using blogging platforms that allow you to do none of the above. Setting up a website is easy, there are guides on the internet about HTML and CSS, this is all you need to make a 
+personal blog or simplistic site - using templating software or blog platforms is tempting but can result in pointlessly bloated websites\*<sub>6</sub>.
 
->5: If you find a blog you like, add it to an [RSS feed](https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml) and build up a subscription portfolio of small, informative sites.
+>5: You can't avoid bloatware sites, so get NoScript (or a similar JS blocker) and an ad-blocker.
+
+>6: If you find a blog you like, add it to an [RSS feed](https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml) and build up a subscription portfolio of small, informative sites.
+
+There is no happy ending to this ride. Unless search engines started allowing users to search by page weight, I don't really forsee an easy solution to the continuing problem of web bloat.
 
 <h2>Appendix/Footnotes:</h2>
 
