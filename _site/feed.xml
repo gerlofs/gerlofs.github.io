@@ -1,46 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-28T20:26:00+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Minweb</title><link href="/2021/03/25/minweb.html" rel="alternate" type="text/html" title="Minweb" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>/2021/03/25/minweb</id><content type="html" xml:base="/2021/03/25/minweb.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/wiby.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-29T13:14:54+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Minweb</title><link href="/2021/03/25/minweb.html" rel="alternate" type="text/html" title="Minweb" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>/2021/03/25/minweb</id><content type="html" xml:base="/2021/03/25/minweb.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/minweb/wiby.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
-&lt;h2 align=&quot;center&quot;&gt;The only average that matters on the modern web&lt;/h2&gt;
+&lt;h2 align=&quot;center&quot;&gt;A bloattrip through a day of HN articles&lt;/h2&gt;
 
 &lt;p&gt;Call it &lt;em&gt;bloat&lt;/em&gt;, call it &lt;em&gt;inefficient&lt;/em&gt;, call it whatever you want. It doesn’t matter &lt;em&gt;how&lt;/em&gt; it is described, users instinctively understand what is wrong with the modern web. 
 Luke Smith recently &lt;a href=&quot;https://www.youtube.com/watch?v=cvDyQUpaFf4&quot;&gt;excommunicated&lt;/a&gt; recipe sites for taking up tens of megabytes of bandwidth for a single recipe - many of 
-which contain relatively little text and image content - and Maciej Cegłowski’s &lt;a href=&quot;https://idlewords.com/talks/website_obesity.htm&quot;&gt;talk&lt;/a&gt; on the subject is a real eye-opener.
-There’s a few &lt;em&gt;average&lt;/em&gt; figures about the web that are quite surprising: The median webpage size is &lt;a href=&quot;https://httparchive.org/reports/page-weight&quot;&gt;over 2MB&lt;/a&gt;, the average time
-to a render webpage fully is over &lt;a href=&quot;https://backlinko.com/page-speed-stats&quot;&gt;10 seconds&lt;/a&gt; on desktop and double that on mobile clients, unsurprisingly, the average connection 
-speed worldwide was &lt;a href=&quot;https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf&quot;&gt;~5Mbps&lt;/a&gt; in 2015. What does this all culminate to? An 
-averagely shitty experience accessing the modern web.&lt;/p&gt;
+which contain relatively little text and image content. ~10MB sounds a pittance to a user of the modern web, where almost every article is rife with fancy javascript wizardry, 
+pagination, and boatloads of other such bloatware*&lt;sub&gt;1&lt;/sub&gt;. However, there are many, existing arguments (which are also more eloquent than mine) against the ever growing size of page weight -
+that is, the size of web pages - such as Dan Luu’s article on &lt;a href=&quot;https://danluu.com/web-bloat&quot;&gt;restrictive web bloat for rural internet users&lt;/a&gt; and Maciej Cegłowski’s 
+&lt;a href=&quot;https://idlewords.com/talks/website_obesity.htm&quot;&gt;talk&lt;/a&gt; which jointly reveal that, regardless of the reasons behind said web bloat, the implementation of multi-megabyte webpages
+both serves little purpose and consequently restricts access a to given webpage. To demonstrate the problem, I’m going to take a leaf out of Maciej’s book and pick some articles and webpages at random and take a look at their page weight. Infact, if you take anything away
+from this post, I hope it is that &lt;em&gt;you&lt;/em&gt; should go away and try this for yourself. Only upon doing so will you realise that this is not a cherry-picking exercise and, rather, is a real phenomenon that
+ authors and web-devs know about but cannot seem to (or do not want to) resolve. But first, let’s talk about some &lt;em&gt;averages&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;The &lt;em&gt;average&lt;/em&gt; modern website is optimisied for the &lt;em&gt;average&lt;/em&gt; user*&lt;sub&gt;1&lt;/sub&gt;, this works in theory as internet speeds and mobile data packages increase in volume year-on-year*&lt;sub&gt;1&lt;/sub&gt;. However, this
-cuts off a specific kind of user, the user with slow internet, a minimal data package, or both of these things - this, as Dan Luu points out in his &lt;a href=&quot;https://danluu.com/web-bloat&quot;&gt;article on web bloat&lt;/a&gt;,
-usually means people living in the developing world, however, real, factual, home-grown Americans &lt;a href=&quot;https://1-minute-modem.branchable.com&quot;&gt;deal with this issue&lt;/a&gt; as well.&lt;/p&gt;
+&lt;p&gt;There’s a few &lt;em&gt;average&lt;/em&gt; figures about the web that are quite surprising: The median webpage size is &lt;a href=&quot;https://httparchive.org/reports/page-weight&quot;&gt;over 2MB&lt;/a&gt;, the average time
+to a render webpage fully is over &lt;a href=&quot;https://backlinko.com/page-speed-stats&quot;&gt;10 seconds&lt;/a&gt; on desktop and double that on mobile clients, unsurprisingly, the average connection 
+speed worldwide was &lt;a href=&quot;https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf&quot;&gt;~5Mbps&lt;/a&gt; in 2015 - note that speeds have most likely improved since 2015.
+What does this all culminate to? An averagely shitty experience accessing the modern web. The &lt;em&gt;average&lt;/em&gt; modern website is optimisied for the &lt;em&gt;average&lt;/em&gt; user*&lt;sub&gt;2&lt;/sub&gt;, this works in theory as internet speeds 
+and mobile data packages increase in volume year-on-year*&lt;sub&gt;3&lt;/sub&gt;. However, this cuts off a specific kind of user, the user with slow internet, a minimal data package, 
+or both of these things - this, as Dan Luu points out, usually means people living in the developing world or in rural areas*&lt;sub&gt;4&lt;/sub&gt;. Keep this in mind as we move forward, I don’t think any of the
+following examples would be impossible to load via a satellite link in Ethiopia, but Dan gives a few examples of sites that &lt;em&gt;you&lt;/em&gt; probably use every day that are either borderline-impossible or literally
+impossible to load and use via a rural internet link.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at some examples. Firstly, I’ll copy Maciej’s approach and ridicule a &lt;a href=&quot;https://fetchprofits.com/website-code-bloat/&quot;&gt;particular example&lt;/a&gt; of an article that discusses how website bloat can
+negatively impact your website and, thus, conversions - marketing lingo for getting lurker plebians to buy your wares. The article, which, without edits to the spacing, can fit comfortably on three sides of A4, tells
+ people how to reduce bloat whilst weighing in at a chunky ~4MB, reduced to 2.77MB with NoScript (a Firefox utility to block Javascript), and further to 1.79MB when viewed in reader view 
+(CTRL+ALT+R on Firefox, if you are somehow unaware). The obvious reason for this is the infographic taken from &lt;a href=&quot;https://skilled.co/resources/speed-affects-website-infographic/&quot;&gt;Skilled.co&lt;/a&gt; which,
+ as far as I’m concerned, could be replaced with a link - this would further cut the page weight (without Javascript) to less than 1MB.&lt;/p&gt;
+
+&lt;p&gt;The next few examples are pulled from a hour-or-so browse of HackerNews for blog-like articles, all of them are, in my opinion, &lt;em&gt;too&lt;/em&gt; bloated given their content. Ben Evans’s 
+&lt;a href=&quot;https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws&quot;&gt;article on Amazon’s income&lt;/a&gt; is 3.31MB without Javascript blocking. This article fits onto less than two sides of A4, 
+yet is still over a megabyte without any Javascript, the culprit here is a 900KB CSS file assumedly from a Squarespace theme. Jacques’s &lt;a href=&quot;https://jacquesmattheij.com/piano-practice-software-progress/&quot;&gt;update on his piano practice software&lt;/a&gt;
+ is ~2.5MB. Honestly, this isn’t as egregious as some of the following
+examples because, besides an uncompressed (or unstripped) PNG file (~300KB), the bloat in this case comes solely from the embedded YouTube player which will request over 2MB in scripts per embedded video. A better 
+example of where this gets really overwhelmingly inefficient really quickly is Softology Blog’s 
+&lt;a href=&quot;https://softologyblog.wordpress.com/2017/03/28/more-fun-with-lattice-boltzman-method-lbm-fluid-simulations/&quot;&gt;discussion of Lattice Boltzman Method fluid simulations&lt;/a&gt;
+which contains four embedded videos, 2MB for each, 8.4MB total webpage size. Javascript, usually for overly-smart features or tracking cookies, tends to be the reccurent villain in the search for web bloat.
+Hackaday articles - as interesting as they tend to be - such as &lt;a href=&quot;https://hackaday.io/project/6150-beckman-du-600-reverse-engineering/log/50756-discovering-a-new-vga-mode&quot;&gt;this one&lt;/a&gt; by Joe Zatarski are always
+larger than a megabyte due to what I can only assume is useless background Javascript, running NoScript the page becomes 763KB (down from 1.3MB without any noticable changes) with the only problem remaining being a 661KB CSS file. 
+Medium is a platform that has a particular knack for filling their articles to the brim with useless crap, &lt;a href=&quot;https://medium.com/the-bad-influence/your-addiction-to-outrage-is-ruining-your-life-9effebdfeaca&quot;&gt;this one&lt;/a&gt; by Pete Ross 
+weighs in at an obese 4.66MB - the article itself is fairly short and can be read in reader view for only 5.42KB. At first glance you may think the large cover image is the cause of the problem but you would be somewhat incorrect,
+ whilst the image is an overly large 290KB, removing useless scripts with NoScript reduces the page size by 85%. I did find an article on HN containing &lt;em&gt;useful&lt;/em&gt; Javascript, &lt;a href=&quot;https://pudding.cool/2021/03/foundation-names/&quot;&gt;this interesting article&lt;/a&gt;
+by Ofunne Amaka and Amber Thomas, whilst not about anything I really care about, contains interactive elements, pagination, and all the traditional blog-style scripting at a size that subceeds the previous Medium article - 
+3.22MB with scripts (150KB without) - but has a valid (and quite attractive) use case that requires its inclusion.&lt;/p&gt;
+
+&lt;div style=&quot;margin-left:10%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/minweb/deargod.png&quot; style=&quot;width:909px;height:297px;&quot; /&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;blockquote&gt;
+            &lt;blockquote&gt;
+              &lt;blockquote&gt;
+                &lt;blockquote&gt;
+                  &lt;p&gt;&lt;em&gt;There’s something seemingly absent from the above article…&lt;/em&gt;&lt;/p&gt;
+                &lt;/blockquote&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;News outlets are akin to Medium in that they overuse copious amounts of Javascript and unaltered images leading to a laughable page weight to text content ratio, here are some I, again, pulled from HN: 
+&lt;a href=&quot;https://www.spectator.co.uk/article/the-beauty-of-the-ampersand-and-other-keyboard-symbols&quot;&gt;This Spectator article&lt;/a&gt; by Hodgkinson should demonstrate the hideous nature of web bloat better than any other
+example in this post, without NoScript the page is an absolute mammoth, a 740 word essay that just about fits on a single side of A4, weighing in at 7.65MB (humorously, this means that you’re taxed 10KB for every
+word read). The scripts, in this case (as is true for most media outlets on the modern web), are semi-malicious in nature. Along with the tracking cookies we’ve all come to know-and-despise is a gigantic footer
+ that does not (yet) block the user from reading the article but declares boldly and obstructivley that we’ll soon be stopped from viewing articles on the site - which is probably a good thing if we’re viewing 
+via a satellite or tariffed internet connection. Chopping out the javascript removes all of this fluff but what remains is two &lt;em&gt;gigantic&lt;/em&gt; images (568KB and 516KB respectively) and 800KB worth of CSS, what a waste.
+&lt;a href=&quot;https://www.theguardian.com/us-news/2021/mar/28/chevron-lawyer-steven-donziger-ecuador-house-arrest&quot;&gt;This Guardian article&lt;/a&gt; is a little bit better, 500KB when all the tracking cookies and pop-ups are blocked, 
+you’re getting a word every 300 bytes or so here. But enough with the semi-bloated examples, we want the big chonkers, the most insane examples. Enter 
+&lt;a href=&quot;https://www.bloomberg.com/news/articles/2021-03-29/nomura-says-it-may-have-significant-loss-from-u-s-operations&quot;&gt;a Bloomberg article about Nomura&lt;/a&gt;, by the time you click through to the article itself, you’ve
+received ~13MB of data to read a 280 word article containing a cover image and single graph. Similarly, &lt;a href=&quot;https://www.theverge.com/2021/3/28/22351901/bmw-high-beam-assist-assistant-dlc-paid-update-ota&quot;&gt;this article on the Verge&lt;/a&gt;
+contains 299 words of original content but clocks in at almost 12MB of data, including our old friend the YouTube embedded player (which cannot be blocked by NoScript), even without the unnecessary scripts, the page
+has a ratio of 10KB for every word. Lastly is &lt;a href=&quot;https://www.reuters.com/&quot;&gt;Reuters&lt;/a&gt; whose news articles tend to focus on visuals (which then get licensed to every other European news outlet) which would be fine if their
+site didn’t use a Javascript gallery rather than embedded images, forcing readers to soak up 3-6MB per article or read without images (both NoScript and reader view strips images from the articles).&lt;/p&gt;
+
+&lt;h3&gt; What can be done? &lt;/h3&gt;
+
+&lt;p&gt;This article was originally envisioned due to my recent obsession of viewing random webpages via &lt;a href=&quot;https://wiby.me/&quot;&gt;Wiby&lt;/a&gt;. Wiby is a search engine that indexes websites that have low page weights and little-to-no
+scripting, it calls this “classic web”. The idea behind the tool is great, however, there’s not enough websites indexed currently for it to be of use to anyone (in my opinion - if you use the tool for a few minutes
+you will probably feel the same way). Despite this, there’s a number of interesting websites indexed on Wiby including &lt;a href=&quot;http://www.eskimo.com/~scs/cclass/cclass.html&quot;&gt;tutorials&lt;/a&gt;, &lt;a href=&quot;http://mlab.uiah.fi/~eye/demos/&quot;&gt;hobbyists&lt;/a&gt;,
+&lt;a href=&quot;http://www.waldeneffect.org/&quot;&gt;outdoorsy people&lt;/a&gt;, &lt;a href=&quot;http://rickadams.org/adventure/&quot;&gt;indoorsy people&lt;/a&gt;, &lt;a href=&quot;https://gerlofs.me/&quot;&gt;great looking websites&lt;/a&gt;, and the &lt;a href=&quot;http://easydos.com/&quot;&gt;eyesores&lt;/a&gt; of the internet. I don’t advocate
+anyone drop DDG and use Wiby or another minimal website index, rather, the entire charm of Wiby and similar indexing systems (including those who chain their blogs together into a little sub-web) is that it shows there is 
+a group of intelligent individuals who care about the web-obesity problem and are attempting to find their own solutions*&lt;sub&gt;5&lt;/sub&gt;. I have compiled some ideas that may or may not be constructive:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1: You can compress images and remove metadata to reduce their size. A PNG of a giant ampersand shouldn’t be half a megabyte.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/minweb/help.png&quot; style=&quot;width:151px;height:244px&quot; /&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2: Reduce your script size by cutting out unnecessary javascript and reducing reliance on libraries. Your blog doesn’t need tracking cookies. 
+You do &lt;strong&gt;not&lt;/strong&gt; need to import jquery into your DOM to swap between &lt;a href=&quot;https://www.geeksforgeeks.org/how-to-create-dark-light-mode-for-website-using-javascript-jquery/&quot;&gt;light mode and dark mode&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;3: Stop using blogging platforms that allow you to do neither of the above. Setting up a website is easy, there are guides on the internet about HTML and CSS, this is all you need to make a 
+&lt;a href=&quot;https://www.youtube.com/watch?v=3dIVesHEAzc&quot;&gt;personal website&lt;/a&gt; - using templating software or blog platforms is tempting but can result in pointless bloated websites*&lt;sub&gt;6&lt;/sub&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;4: You can’t avoid bloatware sites, so get NoScript (or a similar JS blocker) and an ad-blocker.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;5: If you find a blog you like, add it to an &lt;a href=&quot;https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml&quot;&gt;RSS feed&lt;/a&gt; and build up a subscription portfolio of small, informative sites.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2&gt;Appendix/Footnotes:&lt;/h2&gt;
 
-&lt;p&gt;*&lt;sub&gt;1&lt;/sub&gt; You will notice that I neglected to correct my own point here, the average &lt;em&gt;worldwide&lt;/em&gt; user isn’t actually the one that web developers design their webpages for, no no, as you will find out, the target
+&lt;p&gt;*&lt;sub&gt;1&lt;/sub&gt; Here’s a comprehensive list: tracking ads, cookie pop-ups, pointless embedded youtube clips that &lt;em&gt;could&lt;/em&gt; be linked to, hunkering slabs of CSS with no &lt;em&gt;useful&lt;/em&gt; purpose, any javascript that is
+completely irrelevant to the serving of the article I am currently reading, and uncompressed images containing metadata such as XMP, IPTC, colour profiles, etc.&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;2&lt;/sub&gt; You will notice that I neglected to correct my own point here, the average &lt;em&gt;worldwide&lt;/em&gt; user isn’t actually the one that web developers design their webpages for, no no, as you will find out, the target
 audience of these bloated pages actually have far-above-average connection speeds which increase in speed year-on-year, covering up the issue.&lt;/p&gt;
 
-&lt;p&gt;*&lt;sub&gt;2&lt;/sub&gt; If you live in the United Kingdom or keep up with it’s daily news, you might be aware of the UK government’s near-obsessive track record with broadband schemes, whether it’s the opposition’s idea of 
-&lt;a href=&quot;https://labour.org.uk/press/british-broadband-labour-sets-out-mission-to-connect-communities-across-britain-by-delivering-free-full-fibre-broadband-for-all/&quot;&gt;free broadband (lulz)&lt;/a&gt;, or the Conservatives’s belief 
-that everyone should have the &lt;a href=&quot;https://www.bbc.com/news/technology-50042720&quot;&gt;fastest option possible&lt;/a&gt; which, somehow, will deliver &lt;a href=&quot;https://www.gov.uk/government/news/the-benefits-of-broadband&quot;&gt;untold economic growth&lt;/a&gt;. 
-I’m obviously not a proponent of the idea that everyone in the country should have gigabit internet - particularly because I think it is entirely unpractical - but I am in favour of increasing availability
-and reliability of internet coverage in the UK. The median internet speed in the United Kingdom is &lt;a href=&quot;https://www.fastmetrics.com/internet-connection-speed-by-country.php#median-internet-speeds-2020&quot;&gt;28.51Mbps/8.87Mbps&lt;/a&gt; 
+&lt;p&gt;*&lt;sub&gt;3&lt;/sub&gt; The median internet speed in the United Kingdom is &lt;a href=&quot;https://www.fastmetrics.com/internet-connection-speed-by-country.php#median-internet-speeds-2020&quot;&gt;28.51Mbps/8.87Mbps&lt;/a&gt; 
 (up/down), &lt;a href=&quot;https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance&quot;&gt;less than 30%&lt;/a&gt; of connected households have &amp;lt;30Mbps, and 
 &lt;a href=&quot;https://www.ofcom.org.uk/research-and-data/telecoms-research/broadband-research/may-2020-uk-home-broadband-performance&quot;&gt;20%&lt;/a&gt; of the populace currently do not have a broadband connection. These stats are 
 generally inline with &lt;em&gt;some&lt;/em&gt; of Europe (I should note that whilst mean speeds are higher in much of Western Europe, median speeds paint a different picture) and, in terms of 
 &lt;a href=&quot;https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-2018/interactive-report&quot;&gt;coverage&lt;/a&gt;, most regions have a high availability of broadband (without
-regard for speed) - interestingly, the county I reside in has one of the worst coverage statistics in the country. It is important to mentioned these statistics moving forward as it
- may help to explain one potential reason that the modern internet is such a steaming heap.&lt;/p&gt;
+regard for speed) - interestingly, the county I reside in has one of the worst coverage statistics in the country. Much of the discussion around internet speeds within the UK (in recent years) has centered
+around whether people can effectively use streaming services or not, yet many people still have sub-par connection speeds and can barely access and use &lt;em&gt;most&lt;/em&gt; modern websites due to issues with both 
+speed and usage limitations.&lt;/p&gt;
 
-&lt;p&gt;Let’s take a surface-level dive into &lt;a href=&quot;https://wiby.me/&quot;&gt;Wiby&lt;/a&gt;, a search engine that indexes &lt;em&gt;classic&lt;/em&gt; web-pages, generally web pages that have a small &lt;em&gt;page weight&lt;/em&gt; (the size of the website which, in turn, impacts its load speed),
-minimal or zero javascript, and minimal use of “scripts/css for cosmetic effect”.&lt;/p&gt;
+&lt;p&gt;*&lt;sub&gt;4&lt;/sub&gt; Keep in mind that people in the continental US and elsewhere are still on dial-up connections, &lt;a href=&quot;https://1-minute-modem.branchable.com&quot;&gt;this guy&lt;/a&gt; even documented what this experience is like.&lt;/p&gt;
 
-&lt;p&gt;Web bloat is not &lt;em&gt;necessarily&lt;/em&gt; a problem with webpages generally (although developers are also to blame for this foul mess but we will get to them shortly), rather this is a problem indicative of 
-webpage indexing guidelines. For example: Google’s &lt;a href=&quot;https://developers.google.com/search/docs/advanced/guidelines/overview&quot;&gt;guidelines&lt;/a&gt;
-dictate the do’s and dont’s of the www, not a terrible idea given that much of this advice pertains to keeping malicious sites off their search results top spot but this has, with time, favoured a particular 
-brand of web-devvery that puts the design of the web in the hands of marketing-types. Marketers have taken these guidelines to laughable new heights, where, up here, there are only two rules: &lt;em&gt;a)&lt;/em&gt; 
-Google needs to find your site and rank it highly by some arbitrary metric - that means adding hugely over-complicated landing pages and having blog posts on sites that don’t want or need them, and &lt;em&gt;b)&lt;/em&gt; 
-the noobs need to buy your shit*&lt;sub&gt;1&lt;/sub&gt;. Somewhat absent is the idea that webpages should contain useful or interesting information that is easy to access and read.&lt;/p&gt;</content><author><name></name></author><category term="unlisted" /><summary type="html"></summary></entry><entry><title type="html">Kodibox</title><link href="/2021/03/21/kodibox.html" rel="alternate" type="text/html" title="Kodibox" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>/2021/03/21/kodibox</id><content type="html" xml:base="/2021/03/21/kodibox.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/project/kodi/kodibox.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;sub&gt;5&lt;/sub&gt; Using a service to find the page weight before you open a page does not seems to be a work-around to this issue if you are on a bandwidth restricted connection as this doesn’t usually return the actual
+size of the page with scripts and images included nor does it provide an optimal alternative - I believe this is something that could be benefitial to people given the problem of web bloat doesn’t seem to be subsiding 
+over a short span of time.&lt;/p&gt;
+
+&lt;p&gt;*&lt;sub&gt;6&lt;/sub&gt; &lt;em&gt;Haha but you use Jekyll for static side generation, hello mr. bloatman!&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Kodibox</title><link href="/2021/03/21/kodibox.html" rel="alternate" type="text/html" title="Kodibox" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>/2021/03/21/kodibox</id><content type="html" xml:base="/2021/03/21/kodibox.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/project/kodi/kodibox.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
 &lt;h2 align=&quot;center&quot;&gt;Go stream-less for under $200&lt;/h2&gt;
