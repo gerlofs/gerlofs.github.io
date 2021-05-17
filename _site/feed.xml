@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-29T14:00:47+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">A bloat ride</title><link href="/2021/03/25/minweb.html" rel="alternate" type="text/html" title="A bloat ride" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>/2021/03/25/minweb</id><content type="html" xml:base="/2021/03/25/minweb.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/minweb/wiby.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-17T15:18:10+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Test note</title><link href="/2021/05/17/test.html" rel="alternate" type="text/html" title="Test note" /><published>2021-05-17T00:00:00+01:00</published><updated>2021-05-17T00:00:00+01:00</updated><id>/2021/05/17/test</id><content type="html" xml:base="/2021/05/17/test.html">&lt;h1 id=&quot;hello&quot;&gt;Hello!&lt;/h1&gt;
+
+&lt;p&gt;This is a test note…&lt;/p&gt;</content><author><name></name></author><category term="note" /><summary type="html">Hello!</summary></entry><entry><title type="html">A bloat ride</title><link href="/2021/03/25/minweb.html" rel="alternate" type="text/html" title="A bloat ride" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>/2021/03/25/minweb</id><content type="html" xml:base="/2021/03/25/minweb.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/posts/minweb/wiby.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
 &lt;h2 align=&quot;center&quot;&gt;A bloat ride through a day of HN articles&lt;/h2&gt;
@@ -14,19 +16,21 @@ from this post, I hope it is that &lt;em&gt;you&lt;/em&gt; should go away and tr
  authors and web-devs know about but cannot seem to (or do not want to) resolve. But first, let’s talk about some &lt;em&gt;averages&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;There’s a few &lt;em&gt;average&lt;/em&gt; figures about the web that are quite surprising: The median webpage size is &lt;a href=&quot;https://httparchive.org/reports/page-weight&quot;&gt;over 2MB&lt;/a&gt;, the average time
-to a render webpage fully is over &lt;a href=&quot;https://backlinko.com/page-speed-stats&quot;&gt;10 seconds&lt;/a&gt; on desktop and double that on mobile clients, unsurprisingly, the average connection 
+to render a webpage fully is over &lt;a href=&quot;https://backlinko.com/page-speed-stats&quot;&gt;10 seconds&lt;/a&gt; on desktop and double that on mobile clients. Unsurprisingly, the average connection 
 speed worldwide was &lt;a href=&quot;https://www.akamai.com/us/en/multimedia/documents/report/q3-2015-soti-connectivity-final.pdf&quot;&gt;~5Mbps&lt;/a&gt; in 2015 - note that speeds have most likely improved since 2015.
-What does this all culminate to? An averagely shitty experience accessing the modern web. The &lt;em&gt;average&lt;/em&gt; modern website is optimisied for the &lt;em&gt;average&lt;/em&gt; user*&lt;sub&gt;2&lt;/sub&gt;, this works in theory as internet speeds 
+What does this all culminate to? An averagely shitty experience accessing the modern web. The &lt;em&gt;average&lt;/em&gt; modern website is optimised for the &lt;em&gt;average&lt;/em&gt; user*&lt;sub&gt;2&lt;/sub&gt;, this works in theory as internet speeds 
 and mobile data packages increase in volume year-on-year*&lt;sub&gt;3&lt;/sub&gt;. However, this cuts off a specific kind of user, the user with slow internet, a minimal data package, 
 or both of these things - this, as Dan Luu points out, usually means people living in the developing world or in rural areas*&lt;sub&gt;4&lt;/sub&gt;. Keep this in mind as we move forward, I don’t think any of the
 following examples would be impossible to load via a satellite link in Ethiopia, but Dan gives a few examples of sites that &lt;em&gt;you&lt;/em&gt; probably use every day that are either borderline-impossible or literally
 impossible to load and use via a rural internet link.&lt;/p&gt;
 
 &lt;p&gt;Let’s look at some examples. Firstly, I’ll copy Maciej’s approach and ridicule a &lt;a href=&quot;https://fetchprofits.com/website-code-bloat/&quot;&gt;particular example&lt;/a&gt; of an article that discusses how website bloat can
-negatively impact your website and, thus, conversions - marketing lingo for getting lurker plebians to buy your wares. The article, which, without edits to the spacing, can fit comfortably on three sides of A4, tells
+negatively impact your traffic and, thus, conversions - marketing lingo for getting lurker plebians to buy your wares. The article, which, without edits to the spacing, can fit comfortably on three sides of A4, tells
  people how to reduce bloat whilst weighing in at a chunky ~4MB, reduced to 2.77MB with NoScript (a Firefox utility to block Javascript), and further to 1.79MB when viewed in reader view 
 (CTRL+ALT+R on Firefox, if you are somehow unaware). The obvious reason for this is the infographic taken from &lt;a href=&quot;https://skilled.co/resources/speed-affects-website-infographic/&quot;&gt;Skilled.co&lt;/a&gt; which,
- as far as I’m concerned, could be replaced with a link - this would further cut the page weight (without Javascript) to less than 1MB.&lt;/p&gt;
+ as far as I’m concerned, could be replaced with a link - this would further cut the page weight (without Javascript) to less than 1MB. This might &lt;em&gt;sound&lt;/em&gt; like an improvement but this is still 846 bytes per
+word. To put this kind of page bloat into perspective, again, borrowing from Maciej, David Foster Wallace’s &lt;em&gt;Infinite Jest&lt;/em&gt;, one of the longest English novels ever written, has 543,709 words, and is still
+lighter (~1.5MB in EPUB, ~3MB in PDF) that this webpage.&lt;/p&gt;
 
 &lt;p&gt;The next few examples are pulled from a hour-or-so browse of HackerNews for blog-like articles, all of them are, in my opinion, &lt;em&gt;too&lt;/em&gt; bloated given their content. Ben Evans’s 
 &lt;a href=&quot;https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws&quot;&gt;article on Amazon’s income&lt;/a&gt; is 3.31MB without Javascript blocking. This article fits onto less than two sides of A4, 
@@ -65,10 +69,10 @@ by Ofunne Amaka and Amber Thomas, whilst not about anything I really care about,
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;News outlets are akin to Medium in that they overuse copious amounts of Javascript and unaltered images leading to a laughable page weight to text content ratio, here are some I, again, pulled from HN: 
+&lt;p&gt;News outlets are akin to Medium in that they overuse copious amounts of Javascript and unaltered images leading to a laughable page weight to text content ratio. Here are some I, again, pulled from HN: 
 &lt;a href=&quot;https://www.spectator.co.uk/article/the-beauty-of-the-ampersand-and-other-keyboard-symbols&quot;&gt;This Spectator article&lt;/a&gt; by Hodgkinson should demonstrate the hideous nature of web bloat better than any other
 example in this post, without NoScript the page is an absolute mammoth, a 740 word essay that just about fits on a single side of A4, weighing in at 7.65MB (humorously, this means that you’re taxed 10KB for every
-word read). The scripts, in this case (as is true for most media outlets on the modern web), are semi-malicious in nature. Along with the tracking cookies we’ve all come to know-and-despise is a gigantic footer
+word read). The scripts, in this case (as is true for most media outlets on the modern web), are semi-malicious in nature. Along with the tracking cookies we’ve all come to know and despise, is a gigantic footer
  that does not (yet) block the user from reading the article but declares boldly and obstructivley that we’ll soon be stopped from viewing articles on the site - which is probably a good thing if we’re viewing 
 via a satellite or tariffed internet connection. Chopping out the javascript removes all of this fluff but what remains is two &lt;em&gt;gigantic&lt;/em&gt; images (568KB and 516KB respectively) and 800KB worth of CSS, what a waste.
 &lt;a href=&quot;https://www.theguardian.com/us-news/2021/mar/28/chevron-lawyer-steven-donziger-ecuador-house-arrest&quot;&gt;This Guardian article&lt;/a&gt; is a little bit better, 500KB when all the tracking cookies and pop-ups are blocked, 
@@ -100,17 +104,24 @@ You do &lt;strong&gt;not&lt;/strong&gt; need to import jquery into your DOM to s
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;3: Stop using blogging platforms that allow you to do neither of the above. Setting up a website is easy, there are guides on the internet about HTML and CSS, this is all you need to make a 
-&lt;a href=&quot;https://www.youtube.com/watch?v=3dIVesHEAzc&quot;&gt;personal website&lt;/a&gt; - using templating software or blog platforms is tempting but can result in pointless bloated websites*&lt;sub&gt;6&lt;/sub&gt;.&lt;/p&gt;
+  &lt;p&gt;3: Replace embedded scripts (such as the embedded YouTube player) with reasonable alternatives if removing it from the page would not significantly alter the quality of the page. For example,
+there’s no reason why any of the above examples could not replace the embedded player with a static string or image linking (in another tab) to the YouTube video.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;4: You can’t avoid bloatware sites, so get NoScript (or a similar JS blocker) and an ad-blocker.&lt;/p&gt;
+  &lt;p&gt;4: Stop using blogging platforms that allow you to do none of the above. Setting up a website is easy, there are guides on the internet about HTML and CSS, this is all you need to make a 
+personal blog or simplistic site - using templating software or blog platforms is tempting but can result in pointlessly bloated websites*&lt;sub&gt;6&lt;/sub&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;5: If you find a blog you like, add it to an &lt;a href=&quot;https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml&quot;&gt;RSS feed&lt;/a&gt; and build up a subscription portfolio of small, informative sites.&lt;/p&gt;
+  &lt;p&gt;5: You can’t avoid bloatware sites, so get NoScript (or a similar JS blocker) and an ad-blocker.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;6: If you find a blog you like, add it to an &lt;a href=&quot;https://www.thesitewizard.com/faqs/howtoreadsitefeeds.shtml&quot;&gt;RSS feed&lt;/a&gt; and build up a subscription portfolio of small, informative sites.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There is no happy ending to this ride. Unless search engines started allowing users to search by page weight, I don’t really forsee an easy solution to the continuing problem of web bloat.&lt;/p&gt;
 
 &lt;h2&gt;Appendix/Footnotes:&lt;/h2&gt;
 
@@ -137,7 +148,7 @@ speed and usage limitations.&lt;/p&gt;
 size of the page with scripts and images included nor does it provide an optimal alternative - I believe this is something that could be benefitial to people given the problem of web bloat doesn’t seem to be subsiding 
 over a short span of time.&lt;/p&gt;
 
-&lt;p&gt;*&lt;sub&gt;6&lt;/sub&gt; &lt;em&gt;Haha but you use Jekyll for static side generation, hello mr. bloatman!&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Kodibox</title><link href="/2021/03/21/kodibox.html" rel="alternate" type="text/html" title="Kodibox" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>/2021/03/21/kodibox</id><content type="html" xml:base="/2021/03/21/kodibox.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/project/kodi/kodibox.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;sub&gt;6&lt;/sub&gt; &lt;em&gt;Haha but you use Jekyll for static side generation, hello mr. bloatman!&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="post" /><summary type="html"></summary></entry><entry><title type="html">Kodibox</title><link href="/2021/03/21/kodibox.html" rel="alternate" type="text/html" title="Kodibox" /><published>2021-03-21T00:00:00+00:00</published><updated>2021-03-21T00:00:00+00:00</updated><id>/2021/03/21/kodibox</id><content type="html" xml:base="/2021/03/21/kodibox.html">&lt;div style=&quot;margin-left:40%;&quot;&gt;&lt;img src=&quot;/assets/img/project/kodi/kodibox.jpg&quot; style=&quot;height:200px;width:250px;&quot; /&gt;&lt;/div&gt;
 &lt;hr /&gt;
 
 &lt;h2 align=&quot;center&quot;&gt;Go stream-less for under $200&lt;/h2&gt;

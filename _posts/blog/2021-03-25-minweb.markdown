@@ -2,7 +2,7 @@
 layout: front
 title: "A bloat ride"
 cover: /assets/img/posts/minweb/wiby.jpg
-tags: blog
+tags: post
 
 ---
 

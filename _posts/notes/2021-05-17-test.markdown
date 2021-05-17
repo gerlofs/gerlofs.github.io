@@ -1,0 +1,10 @@
+---
+layout: front
+title: "Test note"
+tags: note
+
+---
+
+# Hello!
+
+This is a test note...

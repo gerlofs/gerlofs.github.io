@@ -1,28 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Kodibox</title>
-		<link rel="shorcut icon" type="image/png" href="/assets/img/icon.png">
-		<link rel="stylesheet" href="/assets/css/styles.css">
-	</head>
-	<body>
-		<div class="wrapper">
-		<div class="side-div">
-			<div class="nav-wrapper">
-				<a class="avatar" href="/"><img src="https://avatars.githubusercontent.com/u/77435397?"></img></a>
-				<nav class="links">
-	<a href="/projects/">projects/</a>
-	<a href="/posts/">posts/</a>
-	<a href="/notes/">notes/</a>
-	<a href="/">about</a>
-</nav>
-
-			</div>
-		</div>
-		<div class="centre-div">
-			<section>
-				<div style="margin-left:40%;"><img src="/assets/img/project/kodi/kodibox.jpg" style="height:200px;width:250px;" /></div>
+I"�<div style="margin-left:40%;"><img src="/assets/img/project/kodi/kodibox.jpg" style="height:200px;width:250px;" /></div>
 <hr />
 
 <h2 align="center">Go stream-less for under $200</h2>
@@ -83,20 +59,4 @@ doesn’t support audio playback, I guess.</p>
 <p>*<sub>4</sub> In fact, the WiFi on RBP4 is such a joke - with issues ranging from WPA authentication, to the 5GHz band, to screen resolution in <a href="https://twitter.com/assortedhackery/status/1200056633898029061">more</a>
 than one <a href="https://forum.libreelec.tv/thread/21096-rpi4-can-t-use-wifi-network-error-input-output-eror/">case</a> - I would just recommend not using it if possible. I’m using the Kodibox as a glorified, offline, media center so 
 this is not really an issue in my case.</p>
- 
-			</section>
-		</div>
-		</div>
-	</body>
-	<footer>
-		<div class="foot-wrapper">
-	<div class="foot-icons">
-		<a href="https://github.com/gerlofs"><img src="/assets/img/GitHub-Mark-32px.png"></img></a>
-	</div>
-	<div class="foot-pledge">
-		<p> This site was built with <a href="https://jekyllrb.com">Jekyll</a></p>
-		<p style="color: black;"> Icon taken from <a style="color: black;" href="https://www.flaticon.com/free-icon/pigeon_1196600">here...</a></p>
-	</div>
-</div>
-
-	</footer>
+:ET
