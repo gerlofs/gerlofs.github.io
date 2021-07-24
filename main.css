@@ -12,15 +12,15 @@ body {
 }
 
 p {
-		font: 1 1em "Helvetica", sans-serif;
+		font: 1 1rem "Helvetica", sans-serif;
 }
 
 h1 {
-		font: 600 1.2em "Helvetica", sans-serif;
+		font: 600 1.2rem "Helvetica", sans-serif;
 }
 
 h2 { 
-		font: 400 1.2em "Helvetica", sans-serif;
+		font: 400 1.2rem "Helvetica", sans-serif;
 }
 
 .wrapper {
@@ -67,6 +67,7 @@ h2 {
 }
 
 table {
+		font-size: 1rem;
 		background-color: #747474;
 		line-height: 1.5;
 		height: auto;
